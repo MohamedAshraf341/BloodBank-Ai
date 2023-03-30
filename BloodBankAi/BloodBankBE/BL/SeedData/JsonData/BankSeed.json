@@ -1,0 +1,2452 @@
+[
+  {
+    "Name": "57357",
+    "PhoneNumber": "01077396246",
+    "Email": "57357@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 43
+      },
+      {
+        "Group": "O-",
+        "Value": 36
+      },
+      {
+        "Group": "A+",
+        "Value": 10
+      },
+      {
+        "Group": "A-",
+        "Value": 31
+      },
+      {
+        "Group": "B+",
+        "Value": 36
+      },
+      {
+        "Group": "B-",
+        "Value": 23
+      },
+      {
+        "Group": "AB+",
+        "Value": 34
+      },
+      {
+        "Group": "AB-",
+        "Value": 8
+      }
+    ],
+    "Address": {
+      "Area": "elmasaken",
+      "City": "Benisuef",
+      "State": "elmasaken",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-06-11",
+    "Moderators": [ { "User": { "UserName": "Admin" } } ],
+    "Website": "https://www.nimhans.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/donate-blood-isolated-logo_1025-350.jpg" }
+  },
+  {
+    "Name": "Abdel Kader Fahmy Hospital",
+    "PhoneNumber": "01094029974",
+    "Email": "Abdel_Kader_Fahmy_Hospital@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 15
+      },
+      {
+        "Group": "O-",
+        "Value": 39
+      },
+      {
+        "Group": "A+",
+        "Value": 12
+      },
+      {
+        "Group": "A-",
+        "Value": 33
+      },
+      {
+        "Group": "B+",
+        "Value": 11
+      },
+      {
+        "Group": "B-",
+        "Value": 27
+      },
+      {
+        "Group": "AB+",
+        "Value": 22
+      },
+      {
+        "Group": "AB-",
+        "Value": 31
+      }
+    ],
+    "Address": {
+      "Area": "elmasaken",
+      "City": "Benisuef",
+      "State": "elmasaken",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-07-26",
+    "Moderators": [ { "User": { "UserName": "Mohamed" } } ],
+    "Website": "https://www.victoria.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/heart-care-logo_1032-146.jpg" }
+  },
+  {
+    "Name": "Adam International Hospital (IVF&ICSI)",
+    "PhoneNumber": "01047617050",
+    "Email": "Adam_International_Hospital_(IVF&ICSI)@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 19
+      },
+      {
+        "Group": "O-",
+        "Value": 11
+      },
+      {
+        "Group": "A+",
+        "Value": 32
+      },
+      {
+        "Group": "A-",
+        "Value": 21
+      },
+      {
+        "Group": "B+",
+        "Value": 49
+      },
+      {
+        "Group": "B-",
+        "Value": 43
+      },
+      {
+        "Group": "AB+",
+        "Value": 17
+      },
+      {
+        "Group": "AB-",
+        "Value": 49
+      }
+    ],
+    "Address": {
+      "Area": "beba",
+      "City": "Benisuef",
+      "State": "beba",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-06-21",
+    "Moderators": [ { "User": { "UserName": "mahmoud" } } ],
+    "Website": "https://www.narayana.com",
+    "Photo": { "Url": "https://image.freepik.com/free-photo/blood-drop-paper-medical-cross-health-diy-element_53876-128924.jpg" }
+  },
+  {
+    "Name": "Ain Shams Specialized Hospital, Abbasia",
+    "PhoneNumber": "01078986504",
+    "Email": "Ain_Shams_Specialized_Hospital__Abbasia@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 42
+      },
+      {
+        "Group": "O-",
+        "Value": 33
+      },
+      {
+        "Group": "A+",
+        "Value": 49
+      },
+      {
+        "Group": "A-",
+        "Value": 25
+      },
+      {
+        "Group": "B+",
+        "Value": 21
+      },
+      {
+        "Group": "B-",
+        "Value": 31
+      },
+      {
+        "Group": "AB+",
+        "Value": 48
+      },
+      {
+        "Group": "AB-",
+        "Value": 39
+      }
+    ],
+    "Address": {
+      "Area": "elwasta",
+      "City": "Benisuef",
+      "State": "elwasta",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-02-05",
+    "Moderators": [ { "User": { "UserName": "Ali" } } ],
+    "Website": "https://www.fortis.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/give-blood-background_1057-1029.jpg" }
+  },
+  {
+    "Name": "Ain Shams University Hospital (El Demerdash)",
+    "PhoneNumber": "01015484457",
+    "Email": "Ain_Shams_University_Hospital_(El_Demerdash)@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 7
+      },
+      {
+        "Group": "O-",
+        "Value": 23
+      },
+      {
+        "Group": "A+",
+        "Value": 28
+      },
+      {
+        "Group": "A-",
+        "Value": 36
+      },
+      {
+        "Group": "B+",
+        "Value": 1
+      },
+      {
+        "Group": "B-",
+        "Value": 16
+      },
+      {
+        "Group": "AB+",
+        "Value": 30
+      },
+      {
+        "Group": "AB-",
+        "Value": 44
+      }
+    ],
+    "Address": {
+      "Area": "maghagha",
+      "City": "Elminia",
+      "State": "maghagha",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-12-16",
+    "Moderators": [ { "User": { "UserName": "Ramy" } } ],
+    "Website": "https://www.manipal.com",
+    "Photo": { "Url": "https://image.freepik.com/free-photo/blood-drop-paper-medical-cross-health-diy-element_53876-128924.jpg" }
+  },
+  {
+    "Name": "Agooza Hospital",
+    "PhoneNumber": "01075046364",
+    "Email": "Agooza_Hospital@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 34
+      },
+      {
+        "Group": "O-",
+        "Value": 17
+      },
+      {
+        "Group": "A+",
+        "Value": 2
+      },
+      {
+        "Group": "A-",
+        "Value": 20
+      },
+      {
+        "Group": "B+",
+        "Value": 1
+      },
+      {
+        "Group": "B-",
+        "Value": 1
+      },
+      {
+        "Group": "AB+",
+        "Value": 1
+      },
+      {
+        "Group": "AB-",
+        "Value": 24
+      }
+    ],
+    "Address": {
+      "Area": "ehnasia",
+      "City": "BaniSuef",
+      "State": "ehnasia",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-05-23",
+    "Moderators": [ { "User": { "UserName": "Abdallah" } } ],
+    "Website": "https://www.nimhans.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/give-blood-background_1057-1029.jpg" }
+  },
+  {
+    "Name": "Al Salam Hospital",
+    "PhoneNumber": "01028462217",
+    "Email": "Al_Salam_Hospital@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 9
+      },
+      {
+        "Group": "O-",
+        "Value": 20
+      },
+      {
+        "Group": "A+",
+        "Value": 32
+      },
+      {
+        "Group": "A-",
+        "Value": 27
+      },
+      {
+        "Group": "B+",
+        "Value": 36
+      },
+      {
+        "Group": "B-",
+        "Value": 35
+      },
+      {
+        "Group": "AB+",
+        "Value": 10
+      },
+      {
+        "Group": "AB-",
+        "Value": 27
+      }
+    ],
+    "Address": {
+      "Area": "Elfashn",
+      "City": "BeniSuef",
+      "State": "Elfashn",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-05-10",
+    "Moderators": [ { "User": { "UserName": "Hamdy" } } ],
+    "Website": "https://www.rainbow.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/give-blood-background_1057-1029.jpg" }
+  },
+  {
+    "Name": "Alexandria Psychiatric centre",
+    "PhoneNumber": "01080655354",
+    "Email": "Alexandria_Psychiatric_centre@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 37
+      },
+      {
+        "Group": "O-",
+        "Value": 8
+      },
+      {
+        "Group": "A+",
+        "Value": 17
+      },
+      {
+        "Group": "A-",
+        "Value": 9
+      },
+      {
+        "Group": "B+",
+        "Value": 29
+      },
+      {
+        "Group": "B-",
+        "Value": 3
+      },
+      {
+        "Group": "AB+",
+        "Value": 13
+      },
+      {
+        "Group": "AB-",
+        "Value": 6
+      }
+    ],
+    "Address": {
+      "Area": "Elmasaken",
+      "City": "ElFayoum",
+      "State": "Elmasaken",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-02-10",
+    "Moderators": [ { "User": { "UserName": "Yassen" } } ],
+    "Website": "https://www.apollo.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/give-blood-background_1057-1029.jpg" }
+  },
+  {
+    "Name": "Alzahra Hospital",
+    "PhoneNumber": "01016094183",
+    "Email": "Alzahra_Hospital@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 18
+      },
+      {
+        "Group": "O-",
+        "Value": 18
+      },
+      {
+        "Group": "A+",
+        "Value": 16
+      },
+      {
+        "Group": "A-",
+        "Value": 36
+      },
+      {
+        "Group": "B+",
+        "Value": 45
+      },
+      {
+        "Group": "B-",
+        "Value": 20
+      },
+      {
+        "Group": "AB+",
+        "Value": 28
+      },
+      {
+        "Group": "AB-",
+        "Value": 3
+      }
+    ],
+    "Address": {
+      "Area": "Abohor",
+      "City": "Aswan",
+      "State": "Abohor",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-04-09",
+    "Moderators": [ { "User": { "UserName": "Ehab" } } ],
+    "Website": "https://www.victoria.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/heart-care-logo_1032-146.jpg" }
+  },
+  {
+    "Name": "As Salam International Hospital of Alameda Health Care",
+    "PhoneNumber": "01082712139",
+    "Email": "As_Salam_International_Hospital_of_Alameda_Health_Care@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 5
+      },
+      {
+        "Group": "O-",
+        "Value": 19
+      },
+      {
+        "Group": "A+",
+        "Value": 9
+      },
+      {
+        "Group": "A-",
+        "Value": 36
+      },
+      {
+        "Group": "B+",
+        "Value": 25
+      },
+      {
+        "Group": "B-",
+        "Value": 39
+      },
+      {
+        "Group": "AB+",
+        "Value": 8
+      },
+      {
+        "Group": "AB-",
+        "Value": 2
+      }
+    ],
+    "Address": {
+      "Area": "Kalabsha",
+      "City": "Aswan",
+      "State": "Kalabsha",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-05-07",
+    "Moderators": [ { "User": { "UserName": "Hassan" } } ],
+    "Website": "https://www.maxcure.com",
+    "Photo": { "Url": "https://image.freepik.com/free-photo/blood-drop-paper-medical-cross-health-diy-element_53876-128924.jpg" }
+  },
+  {
+    "Name": "Amoun Hospital",
+    "PhoneNumber": "0107572553",
+    "Email": "Amoun_Hospital@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 20
+      },
+      {
+        "Group": "O-",
+        "Value": 42
+      },
+      {
+        "Group": "A+",
+        "Value": 37
+      },
+      {
+        "Group": "A-",
+        "Value": 9
+      },
+      {
+        "Group": "B+",
+        "Value": 1
+      },
+      {
+        "Group": "B-",
+        "Value": 24
+      },
+      {
+        "Group": "AB+",
+        "Value": 12
+      },
+      {
+        "Group": "AB-",
+        "Value": 32
+      }
+    ],
+    "Address": {
+      "Area": "ehnasia",
+      "City": "BaniSuef",
+      "State": "ehnasia",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-07-20",
+    "Moderators": [ { "User": { "UserName": "Gamal" } } ],
+    "Website": "https://www.manipal.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/give-blood-background_1057-1029.jpg" }
+  },
+  {
+    "Name": "Anglo-American Hospital, Zamalek",
+    "PhoneNumber": "01025657098",
+    "Email": "Anglo-American_Hospital__Zamalek@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 6
+      },
+      {
+        "Group": "O-",
+        "Value": 38
+      },
+      {
+        "Group": "A+",
+        "Value": 8
+      },
+      {
+        "Group": "A-",
+        "Value": 41
+      },
+      {
+        "Group": "B+",
+        "Value": 6
+      },
+      {
+        "Group": "B-",
+        "Value": 25
+      },
+      {
+        "Group": "AB+",
+        "Value": 27
+      },
+      {
+        "Group": "AB-",
+        "Value": 27
+      }
+    ],
+    "Address": {
+      "Area": "Shobra",
+      "City": "Cairo",
+      "State": "Shobra",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-07-15",
+    "Moderators": [ { "User": { "UserName": "Marawan" } } ],
+    "Website": "https://www.manipal.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/medical-service-logos-vector-set_53876-62795.jpg" }
+  },
+  {
+    "Name": "Arab Contractors Medical Center, Gabal Akhdar",
+    "PhoneNumber": "01083702871",
+    "Email": "Arab_Contractors_Medical_Center__Gabal_Akhdar@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 7
+      },
+      {
+        "Group": "O-",
+        "Value": 5
+      },
+      {
+        "Group": "A+",
+        "Value": 4
+      },
+      {
+        "Group": "A-",
+        "Value": 27
+      },
+      {
+        "Group": "B+",
+        "Value": 8
+      },
+      {
+        "Group": "B-",
+        "Value": 20
+      },
+      {
+        "Group": "AB+",
+        "Value": 15
+      },
+      {
+        "Group": "AB-",
+        "Value": 21
+      }
+    ],
+    "Address": {
+      "Area": "Elamira",
+      "City": "Cairo",
+      "State": "Elamira",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-08-19",
+    "Moderators": [ { "User": { "UserName": "Mazen" } } ],
+    "Website": "https://www.nimhans.com",
+    "Photo": { "Url": "https://image.freepik.com/free-photo/blood-drop-paper-medical-cross-health-diy-element_53876-128924.jpg" }
+  },
+  {
+    "Name": "Asyout University Hospital",
+    "PhoneNumber": "01026788101",
+    "Email": "Asyout_University_Hospital@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 33
+      },
+      {
+        "Group": "O-",
+        "Value": 39
+      },
+      {
+        "Group": "A+",
+        "Value": 0
+      },
+      {
+        "Group": "A-",
+        "Value": 5
+      },
+      {
+        "Group": "B+",
+        "Value": 44
+      },
+      {
+        "Group": "B-",
+        "Value": 35
+      },
+      {
+        "Group": "AB+",
+        "Value": 20
+      },
+      {
+        "Group": "AB-",
+        "Value": 42
+      }
+    ],
+    "Address": {
+      "Area": "Elwasta",
+      "City": "BeniSuef",
+      "State": "Elwasta",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2021-01-05",
+    "Moderators": [ { "User": { "UserName": "Yasser" } } ],
+    "Website": "https://www.manipal.com",
+    "Photo": { "Url": "https://image.freepik.com/free-photo/blood-drop-paper-medical-cross-health-diy-element_53876-128924.jpg" }
+  },
+  {
+    "Name": "Badran",
+    "PhoneNumber": "01018309712",
+    "Email": "Badran@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 9
+      },
+      {
+        "Group": "O-",
+        "Value": 28
+      },
+      {
+        "Group": "A+",
+        "Value": 2
+      },
+      {
+        "Group": "A-",
+        "Value": 38
+      },
+      {
+        "Group": "B+",
+        "Value": 27
+      },
+      {
+        "Group": "B-",
+        "Value": 47
+      },
+      {
+        "Group": "AB+",
+        "Value": 10
+      },
+      {
+        "Group": "AB-",
+        "Value": 7
+      }
+    ],
+    "Address": {
+      "Area": "Elmohandseen",
+      "City": "Cairo",
+      "State": "Elmohandseen",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-10-26",
+    "Moderators": [ { "User": { "UserName": "Hossam" } } ],
+    "Website": "https://www.ramaiah.com",
+    "Photo": { "Url": "https://image.freepik.com/free-psd/blood-donation-flyer-template-design_23-2149087897.jpg" }
+  },
+  {
+    "Name": "Behman Hospital, Maddi",
+    "PhoneNumber": "01098312737",
+    "Email": "Behman_Hospital__Maddi@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 12
+      },
+      {
+        "Group": "O-",
+        "Value": 41
+      },
+      {
+        "Group": "A+",
+        "Value": 12
+      },
+      {
+        "Group": "A-",
+        "Value": 30
+      },
+      {
+        "Group": "B+",
+        "Value": 20
+      },
+      {
+        "Group": "B-",
+        "Value": 48
+      },
+      {
+        "Group": "AB+",
+        "Value": 44
+      },
+      {
+        "Group": "AB-",
+        "Value": 41
+      }
+    ],
+    "Address": {
+      "Area": "Elkanater",
+      "City": "Giza",
+      "State": "Elkanater",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-09-03",
+    "Moderators": [ { "User": { "UserName": "Amr" } } ],
+    "Website": "https://www.rainbow.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/give-blood-background_1057-1029.jpg" }
+  },
+  {
+    "Name": "Cairo Institute of Radiology",
+    "PhoneNumber": "01021707764",
+    "Email": "Cairo_Institute_of_Radiology@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 1
+      },
+      {
+        "Group": "O-",
+        "Value": 7
+      },
+      {
+        "Group": "A+",
+        "Value": 41
+      },
+      {
+        "Group": "A-",
+        "Value": 47
+      },
+      {
+        "Group": "B+",
+        "Value": 35
+      },
+      {
+        "Group": "B-",
+        "Value": 19
+      },
+      {
+        "Group": "AB+",
+        "Value": 13
+      },
+      {
+        "Group": "AB-",
+        "Value": 31
+      }
+    ],
+    "Address": {
+      "Area": "Elkanater",
+      "City": "Giza",
+      "State": "Elkanater",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-11-03",
+    "Moderators": [ { "User": { "UserName": "Ammar" } } ],
+    "Website": "https://www.kokilaben.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/heart-care-logo_1032-146.jpg" }
+  },
+  {
+    "Name": "Cairo Kidney Center",
+    "PhoneNumber": "01012073803",
+    "Email": "Cairo_Kidney_Center@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 0
+      },
+      {
+        "Group": "O-",
+        "Value": 1
+      },
+      {
+        "Group": "A+",
+        "Value": 26
+      },
+      {
+        "Group": "A-",
+        "Value": 31
+      },
+      {
+        "Group": "B+",
+        "Value": 16
+      },
+      {
+        "Group": "B-",
+        "Value": 45
+      },
+      {
+        "Group": "AB+",
+        "Value": 36
+      },
+      {
+        "Group": "AB-",
+        "Value": 0
+      }
+    ],
+    "Address": {
+      "Area": "Kerdasa",
+      "City": "Giza",
+      "State": "Kerdasa",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-09-25",
+    "Moderators": [ { "User": { "UserName": "Shehab" } } ],
+    "Website": "https://www.jayadeva.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/heart-care-logo_1032-146.jpg" }
+  },
+  {
+    "Name": "Cairo Medical Center, Heliopolis",
+    "PhoneNumber": "01046818020",
+    "Email": "Cairo_Medical_Center__Heliopolis@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 37
+      },
+      {
+        "Group": "O-",
+        "Value": 16
+      },
+      {
+        "Group": "A+",
+        "Value": 14
+      },
+      {
+        "Group": "A-",
+        "Value": 5
+      },
+      {
+        "Group": "B+",
+        "Value": 48
+      },
+      {
+        "Group": "B-",
+        "Value": 30
+      },
+      {
+        "Group": "AB+",
+        "Value": 2
+      },
+      {
+        "Group": "AB-",
+        "Value": 13
+      }
+    ],
+    "Address": {
+      "Area": "Kerdasa",
+      "City": "Giza",
+      "State": "Kerdasa",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-02-02",
+    "Moderators": [ { "User": { "UserName": "Ayman" } } ],
+    "Website": "https://www.manipal.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/heart-care-logo_1032-146.jpg" }
+  },
+  {
+    "Name": "Cleopatra Hospital, Heliopolis",
+    "PhoneNumber": "01034858580",
+    "Email": "Cleopatra_Hospital__Heliopolis@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 20
+      },
+      {
+        "Group": "O-",
+        "Value": 34
+      },
+      {
+        "Group": "A+",
+        "Value": 15
+      },
+      {
+        "Group": "A-",
+        "Value": 45
+      },
+      {
+        "Group": "B+",
+        "Value": 39
+      },
+      {
+        "Group": "B-",
+        "Value": 46
+      },
+      {
+        "Group": "AB+",
+        "Value": 49
+      },
+      {
+        "Group": "AB-",
+        "Value": 42
+      }
+    ],
+    "Address": {
+      "Area": "Elayat",
+      "City": "Giza",
+      "State": "Elayat",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-01-13",
+    "Moderators": [ { "User": { "UserName": "Radwan" } } ],
+    "Website": "https://www.manipal.com",
+    "Photo": { "Url": "https://image.freepik.com/free-psd/blood-donation-flyer-template-design_23-2149087897.jpg" }
+  },
+  {
+    "Name": "Coptic Hospital",
+    "PhoneNumber": "01023412212",
+    "Email": "Coptic_Hospital@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 18
+      },
+      {
+        "Group": "O-",
+        "Value": 41
+      },
+      {
+        "Group": "A+",
+        "Value": 0
+      },
+      {
+        "Group": "A-",
+        "Value": 24
+      },
+      {
+        "Group": "B+",
+        "Value": 42
+      },
+      {
+        "Group": "B-",
+        "Value": 39
+      },
+      {
+        "Group": "AB+",
+        "Value": 41
+      },
+      {
+        "Group": "AB-",
+        "Value": 44
+      }
+    ],
+    "Address": {
+      "Area": "Elayat",
+      "City": "Giza",
+      "State": "Elayat",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-07-23",
+    "Moderators": [ { "User": { "UserName": "Ebrahim" } } ],
+    "Website": "https://www.apollo.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/give-blood-background_1057-1029.jpg" }
+  },
+  {
+    "Name": "Dar Al Fouad Hospital",
+    "PhoneNumber": "01086793839",
+    "Email": "Dar_Al_Fouad_Hospital@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 37
+      },
+      {
+        "Group": "O-",
+        "Value": 19
+      },
+      {
+        "Group": "A+",
+        "Value": 19
+      },
+      {
+        "Group": "A-",
+        "Value": 34
+      },
+      {
+        "Group": "B+",
+        "Value": 28
+      },
+      {
+        "Group": "B-",
+        "Value": 40
+      },
+      {
+        "Group": "AB+",
+        "Value": 26
+      },
+      {
+        "Group": "AB-",
+        "Value": 13
+      }
+    ],
+    "Address": {
+      "Area": "ElAmira",
+      "City": "Cairo",
+      "State": "ElAmira",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-04-28",
+    "Moderators": [ { "User": { "UserName": "Hatem" } } ],
+    "Website": "https://www.maxcure.com",
+    "Photo": { "Url": "https://image.freepik.com/free-photo/blood-drop-paper-medical-cross-health-diy-element_53876-128924.jpg" }
+  },
+  {
+    "Name": "Dar el Hekma Hospital \"Nasr city\"",
+    "PhoneNumber": "01040578014",
+    "Email": "Dar_el_Hekma_Hospital_\"Nasr_city\"@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 23
+      },
+      {
+        "Group": "O-",
+        "Value": 46
+      },
+      {
+        "Group": "A+",
+        "Value": 47
+      },
+      {
+        "Group": "A-",
+        "Value": 3
+      },
+      {
+        "Group": "B+",
+        "Value": 0
+      },
+      {
+        "Group": "B-",
+        "Value": 17
+      },
+      {
+        "Group": "AB+",
+        "Value": 29
+      },
+      {
+        "Group": "AB-",
+        "Value": 17
+      }
+    ],
+    "Address": {
+      "Area": "Shobra",
+      "City": "Cairo",
+      "State": "Shobra",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-01-02",
+    "Moderators": [ { "User": { "UserName": "Baher" } } ],
+    "Website": "https://www.apollo.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/medical-service-logos-vector-set_53876-62795.jpg" }
+  },
+  {
+    "Name": "Dar el Salam General Hospital",
+    "PhoneNumber": "01010165110",
+    "Email": "Dar_el_Salam_General_Hospital@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 4
+      },
+      {
+        "Group": "O-",
+        "Value": 45
+      },
+      {
+        "Group": "A+",
+        "Value": 10
+      },
+      {
+        "Group": "A-",
+        "Value": 15
+      },
+      {
+        "Group": "B+",
+        "Value": 27
+      },
+      {
+        "Group": "B-",
+        "Value": 38
+      },
+      {
+        "Group": "AB+",
+        "Value": 3
+      },
+      {
+        "Group": "AB-",
+        "Value": 11
+      }
+    ],
+    "Address": {
+      "Area": "Maghagha",
+      "City": "Elminia",
+      "State": "Maghagha",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-09-07",
+    "Moderators": [ { "User": { "UserName": "Shrief" } } ],
+    "Website": "https://www.victoria.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/give-blood-background_1057-1029.jpg" }
+  },
+  {
+    "Name": "Dar el Oyoun Hospital",
+    "PhoneNumber": "01025382756",
+    "Email": "Dar_el_Oyoun_Hospital@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 36
+      },
+      {
+        "Group": "O-",
+        "Value": 8
+      },
+      {
+        "Group": "A+",
+        "Value": 24
+      },
+      {
+        "Group": "A-",
+        "Value": 14
+      },
+      {
+        "Group": "B+",
+        "Value": 38
+      },
+      {
+        "Group": "B-",
+        "Value": 27
+      },
+      {
+        "Group": "AB+",
+        "Value": 19
+      },
+      {
+        "Group": "AB-",
+        "Value": 18
+      }
+    ],
+    "Address": {
+      "Area": "Ebshwai",
+      "City": "Elfayoum",
+      "State": "Ebshwai",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-03-05",
+    "Moderators": [ { "User": { "UserName": "Salah" } } ],
+    "Website": "https://www.apollo.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/give-blood-background_1057-1029.jpg" }
+  },
+  {
+    "Name": "Dar El Teb Diagnostic Center",
+    "PhoneNumber": "0109255411",
+    "Email": "Dar_El_Teb_Diagnostic_Center@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 39
+      },
+      {
+        "Group": "O-",
+        "Value": 15
+      },
+      {
+        "Group": "A+",
+        "Value": 0
+      },
+      {
+        "Group": "A-",
+        "Value": 2
+      },
+      {
+        "Group": "B+",
+        "Value": 16
+      },
+      {
+        "Group": "B-",
+        "Value": 19
+      },
+      {
+        "Group": "AB+",
+        "Value": 3
+      },
+      {
+        "Group": "AB-",
+        "Value": 46
+      }
+    ],
+    "Address": {
+      "Area": "Ebshwai",
+      "City": "Elfayoum",
+      "State": "Ebshwai",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-06-03",
+    "Moderators": [ { "User": { "UserName": "Saleh" } } ],
+    "Website": "https://www.victoria.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/give-blood-background_1057-1029.jpg" }
+  },
+  {
+    "Name": "Dar El Teb IVF Center",
+    "PhoneNumber": "01085920201",
+    "Email": "Dar_El_Teb_IVF_Center@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 45
+      },
+      {
+        "Group": "O-",
+        "Value": 6
+      },
+      {
+        "Group": "A+",
+        "Value": 26
+      },
+      {
+        "Group": "A-",
+        "Value": 20
+      },
+      {
+        "Group": "B+",
+        "Value": 4
+      },
+      {
+        "Group": "B-",
+        "Value": 3
+      },
+      {
+        "Group": "AB+",
+        "Value": 42
+      },
+      {
+        "Group": "AB-",
+        "Value": 21
+      }
+    ],
+    "Address": {
+      "Area": "Etsa",
+      "City": "Elfayoum",
+      "State": "Etsa",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-01-02",
+    "Moderators": [ { "User": { "UserName": "Khaled" } } ],
+    "Website": "https://www.maxcure.com",
+    "Photo": { "Url": "https://image.freepik.com/free-psd/blood-donation-flyer-template-design_23-2149087897.jpg" }
+  },
+  {
+    "Name": "Dar El Shefa Hospital",
+    "PhoneNumber": "01070989839",
+    "Email": "Dar_El_Shefa_Hospital@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 31
+      },
+      {
+        "Group": "O-",
+        "Value": 48
+      },
+      {
+        "Group": "A+",
+        "Value": 42
+      },
+      {
+        "Group": "A-",
+        "Value": 17
+      },
+      {
+        "Group": "B+",
+        "Value": 21
+      },
+      {
+        "Group": "B-",
+        "Value": 49
+      },
+      {
+        "Group": "AB+",
+        "Value": 30
+      },
+      {
+        "Group": "AB-",
+        "Value": 5
+      }
+    ],
+    "Address": {
+      "Area": "Etsa",
+      "City": "Elfayoum",
+      "State": "Etsa",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-04-27",
+    "Moderators": [ { "User": { "UserName": "Samy" } } ],
+    "Website": "https://www.manipal.com",
+    "Photo": { "Url": "https://image.freepik.com/free-photo/blood-drop-paper-medical-cross-health-diy-element_53876-128924.jpg" }
+  },
+  {
+    "Name": "Demerdash Hospital",
+    "PhoneNumber": "01021853964",
+    "Email": "Demerdash_Hospital@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 13
+      },
+      {
+        "Group": "O-",
+        "Value": 46
+      },
+      {
+        "Group": "A+",
+        "Value": 1
+      },
+      {
+        "Group": "A-",
+        "Value": 34
+      },
+      {
+        "Group": "B+",
+        "Value": 26
+      },
+      {
+        "Group": "B-",
+        "Value": 29
+      },
+      {
+        "Group": "AB+",
+        "Value": 0
+      },
+      {
+        "Group": "AB-",
+        "Value": 17
+      }
+    ],
+    "Address": {
+      "Area": "Armant",
+      "City": "Luxor",
+      "State": "Armant",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-08-27",
+    "Moderators": [ { "User": { "UserName": "Waleed" } } ],
+    "Website": "https://www.rainbow.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/give-blood-background_1057-1029.jpg" }
+  },
+  {
+    "Name": "(EMS) - Cairo Dialysis Center",
+    "PhoneNumber": "01050090221",
+    "Email": "(EMS)_-_Cairo_Dialysis_Center@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 16
+      },
+      {
+        "Group": "O-",
+        "Value": 40
+      },
+      {
+        "Group": "A+",
+        "Value": 13
+      },
+      {
+        "Group": "A-",
+        "Value": 22
+      },
+      {
+        "Group": "B+",
+        "Value": 48
+      },
+      {
+        "Group": "B-",
+        "Value": 32
+      },
+      {
+        "Group": "AB+",
+        "Value": 11
+      },
+      {
+        "Group": "AB-",
+        "Value": 8
+      }
+    ],
+    "Address": {
+      "Area": "Armant",
+      "City": "Luxor",
+      "State": "Armant",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-01-21",
+    "Moderators": [ { "User": { "UserName": "Gaber" } } ],
+    "Website": "https://www.rainbow.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/give-blood-background_1057-1029.jpg" }
+  },
+  {
+    "Name": "(EMS) - Sharm El Sheikh Dialysis Center",
+    "PhoneNumber": "01071562085",
+    "Email": "(EMS)_-_Sharm_El_Sheikh_Dialysis_Center@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 0
+      },
+      {
+        "Group": "O-",
+        "Value": 2
+      },
+      {
+        "Group": "A+",
+        "Value": 12
+      },
+      {
+        "Group": "A-",
+        "Value": 24
+      },
+      {
+        "Group": "B+",
+        "Value": 17
+      },
+      {
+        "Group": "B-",
+        "Value": 47
+      },
+      {
+        "Group": "AB+",
+        "Value": 34
+      },
+      {
+        "Group": "AB-",
+        "Value": 41
+      }
+    ],
+    "Address": {
+      "Area": "Elwasta",
+      "City": "Benisuef",
+      "State": "Elwasta",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-10-22",
+    "Moderators": [ { "User": { "UserName": "Adel" } } ],
+    "Website": "https://www.manipal.com",
+    "Photo": { "Url": "https://image.freepik.com/free-psd/blood-donation-flyer-template-design_23-2149087897.jpg" }
+  },
+  {
+    "Name": "(EMS) - Hurghada Dialysis Center",
+    "PhoneNumber": "01020806922",
+    "Email": "(EMS)_-_Hurghada_Dialysis_Center@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 31
+      },
+      {
+        "Group": "O-",
+        "Value": 14
+      },
+      {
+        "Group": "A+",
+        "Value": 26
+      },
+      {
+        "Group": "A-",
+        "Value": 45
+      },
+      {
+        "Group": "B+",
+        "Value": 39
+      },
+      {
+        "Group": "B-",
+        "Value": 34
+      },
+      {
+        "Group": "AB+",
+        "Value": 9
+      },
+      {
+        "Group": "AB-",
+        "Value": 13
+      }
+    ],
+    "Address": {
+      "Area": "Elwasta",
+      "City": "Benisuef",
+      "State": "Elwasta",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-07-19",
+    "Moderators": [ { "User": { "UserName": "Ayan" } } ],
+    "Website": "https://www.nimhans.com",
+    "Photo": { "Url": "https://image.freepik.com/free-psd/blood-donation-flyer-template-design_23-2149087897.jpg" }
+  },
+  {
+    "Name": "El Borg Hospital",
+    "PhoneNumber": "01036082667",
+    "Email": "El_Borg_Hospital@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 46
+      },
+      {
+        "Group": "O-",
+        "Value": 49
+      },
+      {
+        "Group": "A+",
+        "Value": 26
+      },
+      {
+        "Group": "A-",
+        "Value": 43
+      },
+      {
+        "Group": "B+",
+        "Value": 42
+      },
+      {
+        "Group": "B-",
+        "Value": 46
+      },
+      {
+        "Group": "AB+",
+        "Value": 28
+      },
+      {
+        "Group": "AB-",
+        "Value": 3
+      }
+    ],
+    "Address": {
+      "Area": "Elwasta",
+      "City": "Benisuef",
+      "State": "Elwasta",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-04-04",
+    "Moderators": [ { "User": { "UserName": "Zien" } } ],
+    "Website": "https://www.nanavati.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/heart-care-logo_1032-146.jpg" }
+  },
+  {
+    "Name": "El Fayrouz Hospital",
+    "PhoneNumber": "01048037236",
+    "Email": "El_Fayrouz_Hospital@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 10
+      },
+      {
+        "Group": "O-",
+        "Value": 4
+      },
+      {
+        "Group": "A+",
+        "Value": 32
+      },
+      {
+        "Group": "A-",
+        "Value": 34
+      },
+      {
+        "Group": "B+",
+        "Value": 49
+      },
+      {
+        "Group": "B-",
+        "Value": 14
+      },
+      {
+        "Group": "AB+",
+        "Value": 12
+      },
+      {
+        "Group": "AB-",
+        "Value": 1
+      }
+    ],
+    "Address": {
+      "Area": "Elfashen",
+      "City": "Benisuef",
+      "State": "Elfashen",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-06-20",
+    "Moderators": [ { "User": { "UserName": "Akram" } } ],
+    "Website": "https://www.ramaiah.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/heart-care-logo_1032-146.jpg" }
+  },
+  {
+    "Name": "El Ganzouri Specialized Hospital",
+    "PhoneNumber": "01087498684",
+    "Email": "El_Ganzouri_Specialized_Hospital@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 42
+      },
+      {
+        "Group": "O-",
+        "Value": 33
+      },
+      {
+        "Group": "A+",
+        "Value": 44
+      },
+      {
+        "Group": "A-",
+        "Value": 46
+      },
+      {
+        "Group": "B+",
+        "Value": 43
+      },
+      {
+        "Group": "B-",
+        "Value": 18
+      },
+      {
+        "Group": "AB+",
+        "Value": 30
+      },
+      {
+        "Group": "AB-",
+        "Value": 6
+      }
+    ],
+    "Address": {
+      "Area": "Elfashen",
+      "City": "Benisuef",
+      "State": "Elfashen",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-09-25",
+    "Moderators": [ { "User": { "UserName": "Fares" } } ],
+    "Website": "https://www.victoria.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/heart-care-logo_1032-146.jpg" }
+  },
+  {
+    "Name": "El Galaa Hospital",
+    "PhoneNumber": "0105808405",
+    "Email": "El_Galaa_Hospital@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 21
+      },
+      {
+        "Group": "O-",
+        "Value": 27
+      },
+      {
+        "Group": "A+",
+        "Value": 32
+      },
+      {
+        "Group": "A-",
+        "Value": 25
+      },
+      {
+        "Group": "B+",
+        "Value": 22
+      },
+      {
+        "Group": "B-",
+        "Value": 41
+      },
+      {
+        "Group": "AB+",
+        "Value": 5
+      },
+      {
+        "Group": "AB-",
+        "Value": 0
+      }
+    ],
+    "Address": {
+      "Area": "Elsaria",
+      "City": "Alexandria",
+      "State": "Elsaria",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-10-25",
+    "Moderators": [ { "User": { "UserName": "Wael" } } ],
+    "Website": "https://www.victoria.com",
+    "Photo": { "Url": "https://image.freepik.com/free-psd/blood-donation-flyer-template-design_23-2149087897.jpg" }
+  },
+  {
+    "Name": "El Gomhoureyaa Hospital",
+    "PhoneNumber": "01044758887",
+    "Email": "El_Gomhoureyaa_Hospital@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 35
+      },
+      {
+        "Group": "O-",
+        "Value": 26
+      },
+      {
+        "Group": "A+",
+        "Value": 41
+      },
+      {
+        "Group": "A-",
+        "Value": 34
+      },
+      {
+        "Group": "B+",
+        "Value": 2
+      },
+      {
+        "Group": "B-",
+        "Value": 42
+      },
+      {
+        "Group": "AB+",
+        "Value": 23
+      },
+      {
+        "Group": "AB-",
+        "Value": 46
+      }
+    ],
+    "Address": {
+      "Area": "Elsaria",
+      "City": "Alexandria",
+      "State": "Elsaria",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-03-26",
+    "Moderators": [ { "User": { "UserName": "Sief" } } ],
+    "Website": "https://www.jayadeva.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/give-blood-background_1057-1029.jpg" }
+  },
+  {
+    "Name": "El Kablat Hospital",
+    "PhoneNumber": "01075405495",
+    "Email": "El_Kablat_Hospital@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 16
+      },
+      {
+        "Group": "O-",
+        "Value": 17
+      },
+      {
+        "Group": "A+",
+        "Value": 47
+      },
+      {
+        "Group": "A-",
+        "Value": 19
+      },
+      {
+        "Group": "B+",
+        "Value": 18
+      },
+      {
+        "Group": "B-",
+        "Value": 16
+      },
+      {
+        "Group": "AB+",
+        "Value": 6
+      },
+      {
+        "Group": "AB-",
+        "Value": 2
+      }
+    ],
+    "Address": {
+      "Area": "Elsaria",
+      "City": "Alexandria",
+      "State": "Elsaria",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-11-01",
+    "Moderators": [ { "User": { "UserName": "Omar" } } ],
+    "Website": "https://www.kokilaben.com",
+    "Photo": { "Url": "https://image.freepik.com/free-photo/blood-drop-paper-medical-cross-health-diy-element_53876-128924.jpg" }
+  },
+  {
+    "Name": "El Kateb - Cairo Hospital",
+    "PhoneNumber": "01088283029",
+    "Email": "El_Kateb_-_Cairo_Hospital@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 42
+      },
+      {
+        "Group": "O-",
+        "Value": 9
+      },
+      {
+        "Group": "A+",
+        "Value": 4
+      },
+      {
+        "Group": "A-",
+        "Value": 48
+      },
+      {
+        "Group": "B+",
+        "Value": 43
+      },
+      {
+        "Group": "B-",
+        "Value": 23
+      },
+      {
+        "Group": "AB+",
+        "Value": 35
+      },
+      {
+        "Group": "AB-",
+        "Value": 25
+      }
+    ],
+    "Address": {
+      "Area": "Elfath",
+      "City": "Assuit",
+      "State": "Elfath",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-04-12",
+    "Moderators": [ { "User": { "UserName": "Noah" } } ],
+    "Website": "https://www.fortis.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/medical-service-logos-vector-set_53876-62795.jpg" }
+  },
+  {
+    "Name": "Elixir Gastro-hepatic care center, Mohandsin, Giza",
+    "PhoneNumber": "01086956054",
+    "Email": "Elixir_Gastro-hepatic_care_center__Mohandsin__Giza@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 18
+      },
+      {
+        "Group": "O-",
+        "Value": 0
+      },
+      {
+        "Group": "A+",
+        "Value": 2
+      },
+      {
+        "Group": "A-",
+        "Value": 31
+      },
+      {
+        "Group": "B+",
+        "Value": 48
+      },
+      {
+        "Group": "B-",
+        "Value": 5
+      },
+      {
+        "Group": "AB+",
+        "Value": 3
+      },
+      {
+        "Group": "AB-",
+        "Value": 43
+      }
+    ],
+    "Address": {
+      "Area": "Dayrout",
+      "City": "Assuit",
+      "State": "Dayrout",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-10-28",
+    "Moderators": [ { "User": { "UserName": "Badr" } } ],
+    "Website": "https://www.victoria.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/give-blood-background_1057-1029.jpg" }
+  },
+  {
+    "Name": "El Madina Hospital - Cairo",
+    "PhoneNumber": "01029721957",
+    "Email": "El_Madina_Hospital_-_Cairo@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 38
+      },
+      {
+        "Group": "O-",
+        "Value": 7
+      },
+      {
+        "Group": "A+",
+        "Value": 23
+      },
+      {
+        "Group": "A-",
+        "Value": 17
+      },
+      {
+        "Group": "B+",
+        "Value": 46
+      },
+      {
+        "Group": "B-",
+        "Value": 38
+      },
+      {
+        "Group": "AB+",
+        "Value": 35
+      },
+      {
+        "Group": "AB-",
+        "Value": 49
+      }
+    ],
+    "Address": {
+      "Area": "Dayrout",
+      "City": "Assiut",
+      "State": "Dayrout",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-08-25",
+    "Moderators": [ { "User": { "UserName": "Adam" } } ],
+    "Website": "https://www.kokilaben.com",
+    "Photo": { "Url": "https://image.freepik.com/free-photo/blood-drop-paper-medical-cross-health-diy-element_53876-128924.jpg" }
+  },
+  {
+    "Name": "El Merghany Hospital",
+    "PhoneNumber": "01011835740",
+    "Email": "El_Merghany_Hospital@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 27
+      },
+      {
+        "Group": "O-",
+        "Value": 32
+      },
+      {
+        "Group": "A+",
+        "Value": 12
+      },
+      {
+        "Group": "A-",
+        "Value": 43
+      },
+      {
+        "Group": "B+",
+        "Value": 13
+      },
+      {
+        "Group": "B-",
+        "Value": 20
+      },
+      {
+        "Group": "AB+",
+        "Value": 14
+      },
+      {
+        "Group": "AB-",
+        "Value": 12
+      }
+    ],
+    "Address": {
+      "Area": "Dayrout",
+      "City": "Assuit",
+      "State": "Dayrout",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-11-14",
+    "Moderators": [ { "User": { "UserName": "Raed" } } ],
+    "Website": "https://www.jayadeva.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/heart-care-logo_1032-146.jpg" }
+  },
+  {
+    "Name": "El Mobarra MaadiHospital",
+    "PhoneNumber": "01071857859",
+    "Email": "El_Mobarra_MaadiHospital@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 42
+      },
+      {
+        "Group": "O-",
+        "Value": 39
+      },
+      {
+        "Group": "A+",
+        "Value": 1
+      },
+      {
+        "Group": "A-",
+        "Value": 43
+      },
+      {
+        "Group": "B+",
+        "Value": 11
+      },
+      {
+        "Group": "B-",
+        "Value": 1
+      },
+      {
+        "Group": "AB+",
+        "Value": 0
+      },
+      {
+        "Group": "AB-",
+        "Value": 27
+      }
+    ],
+    "Address": {
+      "Area": "Alazhar",
+      "City": "Cairo",
+      "State": "Alazhar",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-10-09",
+    "Moderators": [ { "User": { "UserName": "Kareem" } } ],
+    "Website": "https://www.manipal.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/give-blood-background_1057-1029.jpg" }
+  },
+  {
+    "Name": "El Monera General Hospital",
+    "PhoneNumber": "01017849486",
+    "Email": "El_Monera_General_Hospital@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 43
+      },
+      {
+        "Group": "O-",
+        "Value": 11
+      },
+      {
+        "Group": "A+",
+        "Value": 6
+      },
+      {
+        "Group": "A-",
+        "Value": 1
+      },
+      {
+        "Group": "B+",
+        "Value": 26
+      },
+      {
+        "Group": "B-",
+        "Value": 44
+      },
+      {
+        "Group": "AB+",
+        "Value": 1
+      },
+      {
+        "Group": "AB-",
+        "Value": 33
+      }
+    ],
+    "Address": {
+      "Area": "Alazhar",
+      "City": "Cairo",
+      "State": "Alazhar",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-10-13",
+    "Moderators": [ { "User": { "UserName": "Yazan" } } ],
+    "Website": "https://www.apollo.com",
+    "Photo": { "Url": "https://image.freepik.com/free-photo/blood-drop-paper-medical-cross-health-diy-element_53876-128924.jpg" }
+  },
+  {
+    "Name": "El Nada Maternity Hospital",
+    "PhoneNumber": "01075081940",
+    "Email": "El_Nada_Maternity_Hospital@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 7
+      },
+      {
+        "Group": "O-",
+        "Value": 14
+      },
+      {
+        "Group": "A+",
+        "Value": 36
+      },
+      {
+        "Group": "A-",
+        "Value": 35
+      },
+      {
+        "Group": "B+",
+        "Value": 24
+      },
+      {
+        "Group": "B-",
+        "Value": 21
+      },
+      {
+        "Group": "AB+",
+        "Value": 40
+      },
+      {
+        "Group": "AB-",
+        "Value": 15
+      }
+    ],
+    "Address": {
+      "Area": "Alazhar",
+      "City": "Cairo",
+      "State": "Alazhar",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-06-11",
+    "Moderators": [ { "User": { "UserName": "Maher" } } ],
+    "Website": "https://www.wockhardt.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/give-blood-background_1057-1029.jpg" }
+  },
+  {
+    "Name": "El Nozha International Hospital, Heliopolis",
+    "PhoneNumber": "01015722960",
+    "Email": "El_Nozha_International_Hospital__Heliopolis@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 34
+      },
+      {
+        "Group": "O-",
+        "Value": 24
+      },
+      {
+        "Group": "A+",
+        "Value": 22
+      },
+      {
+        "Group": "A-",
+        "Value": 45
+      },
+      {
+        "Group": "B+",
+        "Value": 8
+      },
+      {
+        "Group": "B-",
+        "Value": 45
+      },
+      {
+        "Group": "AB+",
+        "Value": 43
+      },
+      {
+        "Group": "AB-",
+        "Value": 37
+      }
+    ],
+    "Address": {
+      "Area": "Alazhar",
+      "City": "Cairo",
+      "State": "Alazhar",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-06-01",
+    "Moderators": [ { "User": { "UserName": "Eslam" } } ],
+    "Website": "https://www.kokilaben.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/medical-service-logos-vector-set_53876-62795.jpg" }
+  },
+  {
+    "Name": "El Salam Hospital El Haram",
+    "PhoneNumber": "01098068581",
+    "Email": "El_Salam_Hospital_El_Haram@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 45
+      },
+      {
+        "Group": "O-",
+        "Value": 38
+      },
+      {
+        "Group": "A+",
+        "Value": 3
+      },
+      {
+        "Group": "A-",
+        "Value": 24
+      },
+      {
+        "Group": "B+",
+        "Value": 27
+      },
+      {
+        "Group": "B-",
+        "Value": 40
+      },
+      {
+        "Group": "AB+",
+        "Value": 30
+      },
+      {
+        "Group": "AB-",
+        "Value": 25
+      }
+    ],
+    "Address": {
+      "Area": "Elayat",
+      "City": "Giza",
+      "State": "Elayat",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-06-29",
+    "Moderators": [ { "User": { "UserName": "Ashraf" } } ],
+    "Website": "https://www.apollo.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/donate-blood-isolated-logo_1025-350.jpg" }
+  },
+  {
+    "Name": "El Safa Hospital",
+    "PhoneNumber": "01099429040",
+    "Email": "El_Safa_Hospital@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 33
+      },
+      {
+        "Group": "O-",
+        "Value": 27
+      },
+      {
+        "Group": "A+",
+        "Value": 33
+      },
+      {
+        "Group": "A-",
+        "Value": 22
+      },
+      {
+        "Group": "B+",
+        "Value": 7
+      },
+      {
+        "Group": "B-",
+        "Value": 31
+      },
+      {
+        "Group": "AB+",
+        "Value": 2
+      },
+      {
+        "Group": "AB-",
+        "Value": 28
+      }
+    ],
+    "Address": {
+      "Area": "Shaha",
+      "City": "Elmansoura",
+      "State": "Shaha",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2021-01-14",
+    "Moderators": [ { "User": { "UserName": "Mostafa" } } ],
+    "Website": "https://www.victoria.com",
+    "Photo": { "Url": "https://image.freepik.com/free-vector/give-blood-background_1057-1029.jpg" }
+  },
+  {
+    "Name": "El Shoruk Hospital",
+    "PhoneNumber": "0107153883",
+    "Email": "El_Shoruk_Hospital@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 1
+      },
+      {
+        "Group": "O-",
+        "Value": 28
+      },
+      {
+        "Group": "A+",
+        "Value": 11
+      },
+      {
+        "Group": "A-",
+        "Value": 43
+      },
+      {
+        "Group": "B+",
+        "Value": 47
+      },
+      {
+        "Group": "B-",
+        "Value": 34
+      },
+      {
+        "Group": "AB+",
+        "Value": 7
+      },
+      {
+        "Group": "AB-",
+        "Value": 16
+      }
+    ],
+    "Address": {
+      "Area": "Ebshwai",
+      "City": "Elfayoum",
+      "State": "Ebshwai",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-10-11",
+    "Moderators": [ { "User": { "UserName": "Farid" } } ],
+    "Website": "https://www.nimhans.com",
+    "Photo": { "Url": "https://image.freepik.com/free-psd/blood-donation-flyer-template-design_23-2149087897.jpg" }
+  },
+  {
+    "Name": "El TawfiaiiaHospital",
+    "PhoneNumber": "01077773941",
+    "Email": "El_TawfiaiiaHospital@gmail.com",
+    "BloodGroups": [
+      {
+        "Group": "O+",
+        "Value": 8
+      },
+      {
+        "Group": "O-",
+        "Value": 20
+      },
+      {
+        "Group": "A+",
+        "Value": 23
+      },
+      {
+        "Group": "A-",
+        "Value": 44
+      },
+      {
+        "Group": "B+",
+        "Value": 25
+      },
+      {
+        "Group": "B-",
+        "Value": 47
+      },
+      {
+        "Group": "AB+",
+        "Value": 5
+      },
+      {
+        "Group": "AB-",
+        "Value": 33
+      }
+    ],
+    "Address": {
+      "Area": "Ebshwai",
+      "City": "Elfayoum",
+      "State": "Ebshwai",
+      "Country": "Egypt"
+    },
+    "LastUpdated": "2020-09-02",
+    "Moderators": [ { "User": { "UserName": "Hany" } } ],
+    "Website": "https://www.victoria.com",
+    "Photo": { "Url": "https://image.freepik.com/free-psd/blood-donation-flyer-template-design_23-2149087897.jpg" }
+  }
+]
