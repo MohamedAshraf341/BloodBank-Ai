@@ -1,0 +1,17 @@
+.nav-link
+{
+    color: #fff;
+    margin: 0px 30px;
+    font-size: 1.3rem;
+    transition: all .2s;
+
+}
+.nav-link:hover{
+    cursor: pointer;
+    color: #000;
+    background-color: #fff;
+    border-radius: 7px;
+}
+#navbar2{
+    background-color: #d81e05;
+}
