@@ -14,7 +14,7 @@ namespace Api.Data.SeedData
         {
             if (await context.Banks.AnyAsync()) return;
             string AppDirectory = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName);
-            string path = $"{AppDirectory}\\BackEnd\\Api\\Data\\JsonData\\BankSeed.json";
+            string path = $"{AppDirectory}\\BloodBankBE\\Api\\Data\\JsonData\\BankSeed.json";
             var jsonData = File.ReadAllText(path);
             var addBankDto = JsonSerializer.Deserialize<List<SeedBanksDto>>(jsonData);
 

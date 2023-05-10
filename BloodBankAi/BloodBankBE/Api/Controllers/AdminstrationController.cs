@@ -1,5 +1,6 @@
 ﻿using Api.Dto;
 using Api.Dto.Idintity;
+using Api.Helpers;
 using Api.Interfaces;
 using AutoMapper;
 using Microsoft.AspNetCore.Http;
@@ -22,31 +23,55 @@ namespace Api.Controllers
             _authService = authService;
         }
         [HttpGet("getmoderators")]
-        public async Task<IActionResult> GetModerators()
+        public async Task<ApiResponse<List<AdminstrationDto>>> GetModerators()
         {
-            var users = await _authService.GetRolesForUser();
-            if(users == null)
-                return NotFound("NotFound");
-            return Ok(users);
+            try
+            {
+                var users = await _authService.GetRolesForUser();
+                if (users == null)
+                    return new ApiResponse<List<AdminstrationDto>> { Success = false, Message = "Not Found" };
+                return new ApiResponse<List<AdminstrationDto>> { Success = true, Message = "List Of Admin",Data=users };
+            }
+            catch (Exception ex)
+            {
+                return new ApiResponse<List<AdminstrationDto>> { Success = false, Message = ex.Message };
+            }
+            
         }
         [HttpPost("addmoderator")]
-        public async Task<IActionResult> AddModerator([FromForm] AddSiteAdminDto Dto)
+        public async Task<ApiResponse<AddSiteAdminDto>> AddModerator([FromBody] AddSiteAdminDto Dto)
         {
-            var user = await _uow.Users.FindAsync(u => u.UserName == Dto.UserName);
-            if (user == null)
-                return NotFound("User Not Found");
-            var role = Dto.Roles.ToString();
-            var model = new AddRoleDto { UserId = user.Id, Role = role };
-            var addrole = await _authService.AddRoleAsync(model);
-            if (!string.IsNullOrEmpty(addrole))
-                return BadRequest(addrole);
-            return Ok(addrole);
+            
+            try
+            {
+                var user = await _uow.Users.FindAsync(u => u.UserName == Dto.UserName);
+                if (user == null)
+                    return new ApiResponse<AddSiteAdminDto> { Success = false, Message = "Not Found" };
+                var role = Dto.Roles.ToString();
+                var model = new AddRoleDto { UserId = user.Id, Role = role };
+                var addrole = await _authService.AddRoleAsync(model);
+                if (!string.IsNullOrEmpty(addrole))
+                    return new ApiResponse<AddSiteAdminDto> { Success = false, Message = addrole };
+                return new ApiResponse<AddSiteAdminDto> { Success = true, Message = addrole ,Data=Dto};
+            }
+            catch (Exception ex)
+            {
+                return new ApiResponse<AddSiteAdminDto> { Success = false, Message = ex.Message };
+            }
         }
         [HttpDelete("deletemoderator")]
-        public async Task<IActionResult> RemoveModerator(AddRoleDto model)
+        public async Task<ApiResponse<string>> RemoveModerator(AddRoleDto model)
         {
-            var result = await _authService.RemoveRoleAsync(model);
-            return Ok(result);
+            try
+            {
+                var result = await _authService.RemoveRoleAsync(model);
+                return new ApiResponse<string> { Success = false, Message = result };
+            }
+            catch (Exception ex)
+            {
+                return new ApiResponse<string> { Success = false, Message = ex.Message };
+            }
+            
         }
     }
 }

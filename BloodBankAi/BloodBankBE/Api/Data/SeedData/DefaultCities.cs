@@ -11,7 +11,7 @@ namespace Api.Data.SeedData
         {
             if (await context.Cities.AnyAsync()) return;
             string AppDirectory = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName);
-            string path = $"{AppDirectory}\\BackEnd\\Api\\Data\\JsonData\\CitySeed.json";
+            string path = $"{AppDirectory}\\BloodBankBE\\Api\\Data\\JsonData\\CitySeed.json";
             var data = File.ReadAllText(path);
             var Cities = JsonSerializer.Deserialize<ListCities>(data);
             if (Cities == null) return;

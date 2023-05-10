@@ -84,7 +84,7 @@ namespace Api
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Ecl", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Blood Bank Api", Version = "v1" });
             });
         }
 
@@ -95,7 +95,7 @@ namespace Api
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Ecl v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Blood Bank Api v1"));
             }
             app.UseHttpsRedirection();
             //app.UseCors(c => c.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());

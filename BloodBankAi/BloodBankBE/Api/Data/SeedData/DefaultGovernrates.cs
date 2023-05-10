@@ -13,7 +13,7 @@ namespace Api.Data.SeedData
         {
             if (await context.Governorates.AnyAsync()) return;
             string AppDirectory = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName);
-            string path = $"{AppDirectory}\\BackEnd\\Api\\Data\\JsonData\\GovernorateSeed.json";
+            string path = $"{AppDirectory}\\BloodBankBE\\Api\\Data\\JsonData\\GovernorateSeed.json";
             var data = File.ReadAllText(path);
             var Governorates = JsonSerializer.Deserialize<ListGovernorates>(data);
             if (Governorates == null) return;

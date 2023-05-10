@@ -1,4 +1,5 @@
 ﻿using Api.Dto;
+using Api.Helpers;
 using Api.Interfaces;
 using AutoMapper;
 
@@ -19,22 +20,37 @@ namespace Api.Controllers
             _mapper = mapper;
         }
         [HttpGet("getalldonors")]
-        public async Task<IActionResult> GetAllUsers()
+        public async Task<ApiResponse<IEnumerable<GetDonorsDto>>> GetAllUsers()
         {
-            var users = await _uow.Users.GetAllAsync();
-            if (users == null)
-                return NotFound();
-            var dto = _mapper.Map<IEnumerable<GetDonorsDto>>(users);
-            return Ok(dto);
+            try
+            {
+                var users = await _uow.Users.GetAllAsync();
+                if (users == null)
+                    return new ApiResponse<IEnumerable<GetDonorsDto>> { Success=false,Message="Not Found Donor"};
+                var dto = _mapper.Map<IEnumerable<GetDonorsDto>>(users);
+                return new ApiResponse<IEnumerable< GetDonorsDto >> { Success = true,Message = "Donor List",Data= dto};
+            }
+            catch (Exception ex) 
+            {
+                return new ApiResponse<IEnumerable<GetDonorsDto>> { Success = false, Message = ex.Message};
+            }            
         }
-        [HttpGet("getdonorbyid/{id}")]
-        public async Task<IActionResult> GetUserByID(string id)
+        [HttpGet("getdonorbyid/{id}")] 
+        public async Task<ApiResponse<GetDonorById>> GetUserByID(string id)
         {
-            var donorByAddresss = await _uow.Users.FindAsync(u => u.Id == id, new string[] { "Address" });
-            if (donorByAddresss == null)
-                return NotFound();
-            var dto = _mapper.Map<GetDonorById>(donorByAddresss);
-            return Ok(dto);
+            try
+            {
+                var donorByAddresss = await _uow.Users.FindAsync(u => u.Id == id, new string[] { "Address" });
+                if (donorByAddresss == null)
+                    return new ApiResponse<GetDonorById> { Success=false, Message= "Not Found Donor" };
+                var dto = _mapper.Map<GetDonorById>(donorByAddresss);
+                return new ApiResponse<GetDonorById> { Success=true, Message="Donor By ID",Data= dto };
+            }
+            catch (Exception ex) 
+            {
+                return new ApiResponse<GetDonorById> { Success = false, Message = ex.Message };
+            }
+
         }
 
     }

@@ -15,7 +15,7 @@ namespace Api.Data.SeedData
         {
             if (await userManager.Users.AnyAsync()) return;
             string AppDirectory = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName);
-            string path = $"{AppDirectory}\\BackEnd\\Api\\Data\\JsonData\\UserSeed.json";
+            string path = $"{AppDirectory}\\BloodBankBE\\Api\\Data\\JsonData\\UserSeed.json";
             var jsonData = File.ReadAllText(path);
             var addUserDto = JsonSerializer.Deserialize<List<SeedUsersDto>> (jsonData);
 

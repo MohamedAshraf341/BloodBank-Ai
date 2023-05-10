@@ -49,7 +49,7 @@ namespace Api.Services
                 LastActive=DateTime.Now,
                 PhoneNumber= model.PhoneNumber,
                 Available=true,
-                Address=new Address {Area=model.Area,City=model.City,Government=model.Government,Country=model.Country }
+                Address=new Address {Area=model.Area,City=model.City,Government=model.Government }
             };
 
             var result = await _userManager.CreateAsync(user, model.Password);

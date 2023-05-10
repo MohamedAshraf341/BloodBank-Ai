@@ -11,4 +11,9 @@
         BankAdmin,
         BankModerator
     }
+    public class EnumItem
+    {
+        public int Id { get; set; }
+        public string Value { get; set; }
+    }
 }

@@ -1,0 +1,76 @@
+<div class="container">
+    <div class="card my-2">
+        <div class="card-header text-primary text-center"><i class="fa fa-sign-in"></i> Register Bank</div>
+        <div class="card-body">
+            <form [formGroup]="bankRegisterForm"
+                (ngSubmit)="!bankRegisterForm.pristine && registerBank()">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group" style="display: flex;">
+                            <i class="fa fa-id-card mr-2"></i>
+                            <label style="width: 100px;">Name</label>
+                            <input type="text" class="form-control" formControlName="name">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group" style="display: flex;">
+                            <i class="fa fa-globe mr-2"></i>
+                            <label style="width: 100px;">Website</label>
+                            <input type="text" class="form-control" formControlName="website">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group" style="display: flex;">
+                            <i class="fa fa-envelope-open mr-2"></i>
+                            <label style="width: 100px;">Email</label>
+                            <input type="text" class="form-control" formControlName="email">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group" style="display: flex;">
+                            <i class="fa fa-id-card mr-2"></i>
+                            <label style="width: 100px;">Phone</label>
+                            <input type="text" class="form-control" formControlName="phoneNumber">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group" style="display: flex;">
+                            <i class="fa fa-flag mr-2"></i>
+                            <label style="width: 100px;">govern</label>
+                            <input type="text" class="form-control" formControlName="government">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group" style="display: flex;">
+                            <i class="fa fa-university mr-2"></i>
+                            <label style="width: 100px;">City</label>
+                            <input type="text" class="form-control" formControlName="city">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group" style="display: flex;">
+                            <i class="fa fa-street-view mr-2"></i>
+                            <label style="width: 100px;">Area</label>
+                            <input type="text" class="form-control" formControlName="area">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group" style="display: flex;">
+                            <i class="fa fa-user-plus mr-2"></i>
+                            <label style="width: 100px;">Bank Admin</label>
+                            <input type="text" class="form-control" formControlName="userName">
+                        </div>
+                    </div>
+                    
+    
+                </div>
+                <div class="row justify-content-center mt-5">
+                    <div class="text-center mt-2">
+                        <button [disabled]="bankRegisterForm.pristine || bankRegisterForm.invalid" class="btn btn-primary"
+                        type="submit"><i class="fa fa-check"></i> Register</button>
+                    </div>
+                </div>            
+            </form>
+        </div>
+    </div>
+</div>

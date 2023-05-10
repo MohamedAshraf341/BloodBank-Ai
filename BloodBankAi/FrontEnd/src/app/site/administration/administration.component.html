@@ -1,0 +1,136 @@
+<div class="container">
+    <div class="row mb-1 mt-5 ">
+        <div class="col">
+            <div class="input-group mb-3 box-shadow">
+                <div class="input-group-prepend">
+                    <span class="input-group-text border-top-0 border-left-0 border-bottom-0"><i
+                            class="fa fa-search"></i></span>
+                </div>
+                <input type="text" [(ngModel)]="searchText" placeholder="Search by admins ..."
+                    class="form-control border border-danger">
+                    <div class="input-group-append">
+                    <a style="cursor:pointer;" (click)="openModal(modal)" class="input-group-text border-top-0 border-right-0 border-bottom-0"><i
+                            class="fa fa-plus mr-1"></i> Add Admin</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-2" style=" background-color: white;">
+        <table class="table table-hover">
+            <thead class="text-primary">
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">Role</th>
+                    <th scope="col">Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of users | search: searchText | paginate: { itemsPerPage: 12, currentPage: p }; let i = index;">
+                    <td class="d-flex justify-content-center">
+                        <img *ngIf="!user.picture" src="../../../assets/siteimg/default-user.jpg" class="img-fluid rounded-circle mb-2 mb-md-0" style="max-height: 50px;" />
+                        <img *ngIf="user.picture" [src]="getPictureUrl(user.picture)" class="img-fluid rounded-circle mb-2 mb-md-0" style="max-height: 50px;" />
+
+                    </td>
+                    <td class="align-middle">
+                        {{user.name}}
+                    </td>
+                    <td class="align-middle">
+                        {{user.userName}}
+                    </td>
+                    <td class="align-middle">
+                        {{user.role}}
+                    </td>
+                    <td class="align-middle">
+                        <button class="btn btn-sm btn-danger ml-2"
+                            (click)="openModalDelete(deleteModal, user.id)"><i class="fa fa-trash"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="pb-4" >
+        <div class="row justify-content-center" >
+                <div class="bg-white text-center" style="width: fit-content;">
+                    <pagination-controls autoHide="true" (pageChange)="p = $event" maxSize="5"></pagination-controls>
+                </div>
+        </div>
+    </div>
+    <ng-template #modal>
+        <div class="float-right">
+            <button type="button" class="close mr-4 mt-3" data-dismiss="modal" aria-label="Close"
+                (click)="closeModal()">
+                <span class="text-danger" aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="card border-primary mb-3" style="border-radius:20px;">
+                <div class="card-body">
+                    <form #rolesForm="ngForm" (ngSubmit)="rolesForm.valid && addRole()">
+                        <div class="row">
+                            <div class="col-sm-3 text-primary">
+                                Username
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="form-group">
+                                    <!-- <input [class.is-valid]="name.valid  && name.dirty"
+                                        [class.is-invalid]="name.invalid && name.dirty" type="text" required
+                                        class="form-control form-control-sm" [(ngModel)]="adminRole.userName"
+                                        appUserNameValidator="true" name="userName" id="userName"
+                                        value="{{adminRole.userName}}" #name="ngModel" placeholder="Enter Username">
+                                    <div class="valid-feedback" *ngIf="rolesForm.controls['userName']?.valid">
+                                        Username available.</div>
+                                    <div class="invalid-feedback"
+                                        *ngIf="rolesForm.controls['userName']?.errors?.alreadyExist === false">
+                                        Username not available.</div> -->
+                                        <input 
+                                         type="text" required
+                                         class="form-control form-control-sm" [(ngModel)]="addAdminBody.userName"
+                                         name="userName" id="userName"
+                                         #name="ngModel" placeholder="Enter Username">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-sm-3 text-primary">
+                                Role
+                            </div>
+                            <div class="col-sm-9">
+                                <select id="role" class="form-control form-control-sm form-select form-select-sm"
+                                    [(ngModel)]="addAdminBody.roles" name="role">
+                                    <option *ngFor="let item of adminsType" [value]="item.id">{{item.value}}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-12 mt-4 mt-md-0 d-flex justify-content-center">
+                                <button [disabled]="!rolesForm.valid" class="btn btn-sm btn-info" type="submit"><i
+                                        class="fa fa-check"></i> Add Role</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+    <ng-template #deleteModal let-modal>
+        <div class="float-right">
+            <button type="button" class="close mr-4 mt-3" data-dismiss="modal" aria-label="Close" (click)="closeModal()">
+                <span class="text-danger" aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="card border-primary mb-3" style="border-radius:20px;">
+                <div class="card-body">
+                    <h5 class="modal-title">Are you sure delete this moderator?</h5>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" (click)="closeModal()">No</button>
+            <button type="button" class="btn btn-danger" (click)="modal.close('yes')">yes</button>
+        </div>
+    </ng-template>
+</div>

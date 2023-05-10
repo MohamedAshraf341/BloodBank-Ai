@@ -1,0 +1,22 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+nav p{
+    font-weight: 900;
+    color:#d81e05;
+}
+.display{
+    display: none;
+}
+.jumbotron h1{
+    color: #d81e05;
+    
+}
+
+.jumbotron p{
+    width: 80%;
+    margin: auto;
+}

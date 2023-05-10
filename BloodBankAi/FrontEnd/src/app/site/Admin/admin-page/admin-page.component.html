@@ -1,0 +1,49 @@
+<div class="container mt-3 ">
+    <div class="row mb-1 ">
+        <div class="col">
+            <div class="input-group mb-3 box-shadow">
+                <div class="input-group-prepend">
+                    <span class="input-group-text border-top-0 border-left-0 border-bottom-0"><i
+                            class="fa fa-search"></i></span>
+                </div>
+                <input type="text" [(ngModel)]="searchText" placeholder="Search by banks ..."
+                    class="form-control border border-danger">
+                    <div class="input-group-append">
+                    <a routerLink="/admin-page/bank-register" style="cursor:pointer;" class="input-group-text border-top-0 border-right-0 border-bottom-0"><i
+                            class="fa fa-plus mr-1"></i> Register Bank</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="list-group">
+        <a routerLink="/admin-page/bank/{{bank.id}}" class="list-group-item list-group-item-action" 
+        *ngFor="let bank of banks | search: searchText | paginate: { itemsPerPage: 12, currentPage: p }; let i = index;">
+            <div class="row">
+                <div class="image col-12 col-md-1 d-flex align-items-center align-items-md-start flex-column">
+                    <img *ngIf="bank.picture" [src]="getPictureUrl(bank.picture)"  class="img-fluid mb-2 mb-md-0"style="max-height: 50px;" />
+                    <img *ngIf="!bank.picture" src="../../../../assets/siteimg/hospital.png" class="img-fluid mb-2 mb-md-0"style="max-height: 50px;" />
+                </div>
+                <div class="col-12 col-md-11">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1 text-primary">{{bank.name}}</h5>
+                        <!-- <small><i class="fa fa-history"></i> {{bank.lastUpdated }}</small> -->
+                    </div>
+                    <small class="text-muted"><i class="fa fa-map-marker"></i> {{bank.address.area}}, {{bank.address.city}} - {{bank.address.government}}.</small>
+                    <div>
+                        <small class="text-info"><i class="fa fa-id-card"></i> BankId - {{bank.id}}</small>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<div class="container pb-4" >
+    <div class="row justify-content-center" >
+            <div class="bg-white text-center" style="width: fit-content;">
+                <pagination-controls autoHide="true" (pageChange)="p = $event" maxSize="5"></pagination-controls>
+            </div>
+    </div>
+</div>

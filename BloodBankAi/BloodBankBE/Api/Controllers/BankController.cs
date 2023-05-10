@@ -7,6 +7,7 @@ using System.Text.Json.Serialization;
 using System.Text.Json;
 using Api.Interfaces;
 using Api.Dto;
+using Api.Helpers;
 
 namespace Api.Controllers
 {
@@ -22,30 +23,44 @@ namespace Api.Controllers
             _mapper = mapper;
         }
         [HttpGet("getallbanks")]
-        public async Task<IActionResult> GetAllBank()
+        public async Task<ApiResponse<List<BankWithBloodGroupsDto>>> GetAllBank()
         {
-            var banks = await _uow.Banks.FindAllAsync(new string[] { "BloodGroups" });
-            if (banks == null)
-                return NotFound("Not Found");
-            var json = JsonSerializer.Serialize(banks, new JsonSerializerOptions()
+            try
             {
-                ReferenceHandler = ReferenceHandler.IgnoreCycles
-            });
-            var dto = JsonSerializer.Deserialize<List<BankWithBloodGroupsDto>>(json);
-            return Ok(dto);
+                var banks = await _uow.Banks.FindAllAsync(new string[] { "BloodGroups" });
+                if (banks == null)
+                    return new ApiResponse<List<BankWithBloodGroupsDto>> { Success = false, Message = "Not Found" };
+                var json = JsonSerializer.Serialize(banks, new JsonSerializerOptions()
+                {
+                    ReferenceHandler = ReferenceHandler.IgnoreCycles
+                });
+                var dto = JsonSerializer.Deserialize<List<BankWithBloodGroupsDto>>(json);
+                return new ApiResponse<List<BankWithBloodGroupsDto>> { Success = true, Message = "List Of Banks", Data = dto };
+            }
+            catch (Exception ex) 
+            {
+                return new ApiResponse<List<BankWithBloodGroupsDto>> { Success = false, Message = ex.Message };
+            }
         }
         [HttpGet("getbankbyid/{Id}")]
-        public async Task<IActionResult> GetBankByID(int Id)
+        public async Task<ApiResponse<BankByIdWithAddressDto>> GetBankByID(int Id)
         {
-            var bank = await _uow.Banks.FindAsync(u => u.Id==Id, new string[] { "Address" });
-            if (bank == null)
-                return NotFound("Not Found");
-            var json = JsonSerializer.Serialize(bank, new JsonSerializerOptions()
+            try
             {
-                ReferenceHandler = ReferenceHandler.IgnoreCycles
-            });
-            var dto = JsonSerializer.Deserialize<BankByIdWithAddressDto>(json);
-            return Ok(dto);
+                var bank = await _uow.Banks.FindAsync(u => u.Id == Id, new string[] { "Address" });
+                if (bank == null)
+                    return new ApiResponse<BankByIdWithAddressDto> { Success = false, Message = "Not Found" };
+                var json = JsonSerializer.Serialize(bank, new JsonSerializerOptions()
+                {
+                    ReferenceHandler = ReferenceHandler.IgnoreCycles
+                });
+                var dto = JsonSerializer.Deserialize<BankByIdWithAddressDto>(json);
+                return new ApiResponse<BankByIdWithAddressDto> { Success = true, Message = "Bank By Id", Data = dto };
+            }
+            catch (Exception ex) 
+            {
+                return new ApiResponse<BankByIdWithAddressDto> { Success = false, Message = ex.Message };
+            }
         }
     }
 }

@@ -7,6 +7,7 @@ using Api.Dto.Idintity;
 using Api.Data.Entities.Identity;
 using Api.Data.Entities;
 using Api.Dto;
+using Api.Helpers;
 
 namespace Api.Controllers
 {
@@ -26,33 +27,50 @@ namespace Api.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> RegisterAsync([FromBody] RegisterDto model)
+        public async Task<ApiResponse<ResponseAuthDto>> RegisterAsync([FromBody] RegisterDto model)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+            try
+            {
+                if (!ModelState.IsValid)
+                    return new ApiResponse<ResponseAuthDto> { Success = false, Message = "Not Found" };
 
-            var result = await _authService.RegisterAsync(model);
+                var result = await _authService.RegisterAsync(model);
 
-            if (!result.IsAuthenticated)
-                return BadRequest(result.Message);
+                if (!result.IsAuthenticated)
+                    return new ApiResponse<ResponseAuthDto> { Success = false, Message = result.Message };
 
-            SetRefreshTokenInCookie(result.RefreshToken, result.RefreshTokenExpiration);
 
-            return Ok(result);
+                SetRefreshTokenInCookie(result.RefreshToken, result.RefreshTokenExpiration);
+
+                return new ApiResponse<ResponseAuthDto> { Success = true, Message = result.Message,Data=result };
+            }
+            catch (Exception ex) 
+            {
+                return new ApiResponse<ResponseAuthDto> { Success = false, Message = ex.Message };
+            }
+            
         }
 
         [HttpPost("login")]
-        public async Task<IActionResult> GetTokenAsync([FromBody] LoginDto model)
+        public async Task<ApiResponse<ResponseAuthDto>> GetTokenAsync([FromBody] LoginDto model)
         {
-            var result = await _authService.GetTokenAsync(model);
+            try
+            {
+                var result = await _authService.GetTokenAsync(model);
 
-            if (!result.IsAuthenticated)
-                return BadRequest(result.Message);
+                if (!result.IsAuthenticated)
+                    return new ApiResponse<ResponseAuthDto> { Success = false, Message = result.Message };
 
-            if (!string.IsNullOrEmpty(result.RefreshToken))
-                SetRefreshTokenInCookie(result.RefreshToken, result.RefreshTokenExpiration);
+                if (!string.IsNullOrEmpty(result.RefreshToken))
+                    SetRefreshTokenInCookie(result.RefreshToken, result.RefreshTokenExpiration);
 
-            return Ok(result);
+                return new ApiResponse<ResponseAuthDto> { Success = true, Message = result.Message, Data = result };
+            }
+            catch (Exception ex) 
+            {
+                return new ApiResponse<ResponseAuthDto> { Success = false, Message = ex.Message };
+            }
+            
         }
 
         [HttpPost("addRole")]
@@ -70,34 +88,51 @@ namespace Api.Controllers
         }
 
         [HttpGet("refreshToken")]
-        public async Task<IActionResult> RefreshToken()
+        public async Task<ApiResponse<ResponseAuthDto>> RefreshToken()
         {
-            var refreshToken = Request.Cookies["refreshToken"];
+            try
+            {
+                var refreshToken = Request.Cookies["refreshToken"];
 
-            var result = await _authService.RefreshTokenAsync(refreshToken);
+                var result = await _authService.RefreshTokenAsync(refreshToken);
 
-            if (!result.IsAuthenticated)
-                return BadRequest(result);
+                if (!result.IsAuthenticated)
+                    return new ApiResponse<ResponseAuthDto> { Success = false, Message = result.Message,Data=result };
 
-            SetRefreshTokenInCookie(result.RefreshToken, result.RefreshTokenExpiration);
+                SetRefreshTokenInCookie(result.RefreshToken, result.RefreshTokenExpiration);
 
-            return Ok(result);
+                return new ApiResponse<ResponseAuthDto> { Success = true, Message = result.Message, Data = result };
+            }
+            catch (Exception ex)
+            {
+                return new ApiResponse<ResponseAuthDto> { Success = false, Message = ex.Message };
+            }
+            
         }
 
         [HttpPost("revokeToken")]
-        public async Task<IActionResult> RevokeToken([FromBody] RevokeTokenDto model)
+        public async Task<ApiResponse<string>> RevokeToken([FromBody] RevokeTokenDto model)
         {
-            var token = model.Token ?? Request.Cookies["refreshToken"];
+            
+            try
+            {
+                var token = model.Token ?? Request.Cookies["refreshToken"];
 
-            if (string.IsNullOrEmpty(token))
-                return BadRequest("Token is required!");
+                if (string.IsNullOrEmpty(token))
+                    return new ApiResponse<string> { Success = false, Message = "Token is required!" };
 
-            var result = await _authService.RevokeTokenAsync(token);
+                var result = await _authService.RevokeTokenAsync(token);
 
-            if (!result)
-                return BadRequest("Token is invalid!");
+                if (!result)
+                    return new ApiResponse<string> { Success = false, Message = "Token is invalid!" };
 
-            return Ok();
+
+                return new ApiResponse<string> { Success = true, Message = "User is LogOut!" };
+            }
+            catch (Exception ex)
+            {
+                return new ApiResponse<string> { Success = false, Message = ex.Message };
+            }
         }
 
         private void SetRefreshTokenInCookie(string refreshToken, DateTime expires)
