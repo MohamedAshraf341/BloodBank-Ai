@@ -43,7 +43,6 @@ export class BankEditComponent implements OnInit {
     // });
     this.getBank(this.bankId);
     this.getGoverns();
-    this.getCities();
     this.getModerators();
   }
   getBank(id:number)
@@ -91,9 +90,9 @@ export class BankEditComponent implements OnInit {
       this.governs=res;
     });
   }
-  getCities()
+  getCities(id:number)
   {
-    this.helper.getAllCit().subscribe((res)=>{
+    this.helper.getAllCit(id).subscribe((res)=>{
       this.cities=res;
     });
   }

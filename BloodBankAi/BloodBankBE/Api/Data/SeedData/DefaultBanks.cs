@@ -1,7 +1,7 @@
 ﻿using Api.Const;
 using Api.Data.Entities;
 using Api.Data.Entities.Identity;
-using Api.Dto;
+using Api.Dto.Bank;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
@@ -18,7 +18,7 @@ namespace Api.Data.SeedData
             var jsonData = File.ReadAllText(path);
             var addBankDto = JsonSerializer.Deserialize<List<SeedBanksDto>>(jsonData);
 
-            var bankModerator1 = await userManager.Users.FirstOrDefaultAsync(u => u.UserName == "mohamed");
+            var bankModerator1 = await userManager.Users.FirstOrDefaultAsync(u => u.UserName == "bankmoderator");
             var bankModerator2 = await userManager.Users.FirstOrDefaultAsync(u => u.UserName == "yara");
 
             if (addBankDto == null) return;

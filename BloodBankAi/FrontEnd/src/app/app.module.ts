@@ -1,10 +1,9 @@
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import {TimeAgoPipe} from 'time-ago-pipe'
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './Shared/nav-bar/nav-bar.component';
@@ -31,6 +30,13 @@ import { AdministrationComponent } from './site/administration/administration.co
 import { LoginComponent } from './Auth/login/login.component';
 import { SignUpComponent } from './Auth/sign-up/sign-up.component';
 import { EditProfileComponent } from './Auth/edit-profile/edit-profile.component';
+import { DlDateTimeDateModule, DlDateTimePickerModule } from 'angular-bootstrap-datetimepicker';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { AuthInterceptor } from './Guard/auth.interceptor';
+import { ModeratorPageComponent } from './site/Moderator/moderator-page/moderator-page.component';
+import { EditeBloodComponent } from './site/Moderator/edite-blood/edite-blood.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,7 +61,8 @@ import { EditProfileComponent } from './Auth/edit-profile/edit-profile.component
     LoginComponent,
     SignUpComponent,
     EditProfileComponent,
-
+    ModeratorPageComponent,
+    EditeBloodComponent,
   ],
   imports: [
     BrowserModule,
@@ -67,9 +74,17 @@ import { EditProfileComponent } from './Auth/edit-profile/edit-profile.component
     BrowserAnimationsModule, 
     CommonModule,
     NgxPaginationModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    DlDateTimeDateModule,  
+    DlDateTimePickerModule,
+    NgxSpinnerModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true
+    }
+  ],  bootstrap: [AppComponent]
 })
 export class AppModule { }

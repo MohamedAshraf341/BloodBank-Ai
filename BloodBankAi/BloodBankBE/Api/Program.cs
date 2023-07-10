@@ -3,6 +3,9 @@ using Microsoft.AspNetCore.Identity;
 using Serilog;
 using Api.Data.SeedData;
 using Api.Data.Entities.Identity;
+using Microsoft.AspNetCore.Hosting.Server.Features;
+using Microsoft.AspNetCore.Hosting.Server;
+using System;
 
 namespace Api
 {
@@ -34,8 +37,6 @@ namespace Api
                 await DefaultRoles.SeedAsync(roleManager);
                 await DefaultUsers.SeedUserAsync(userManager, context);
                 await DefaultBanks.SeedBanksAsync(userManager, context);
-
-
                 Log.Information("Data seed done");
             }
             catch (Exception ex)

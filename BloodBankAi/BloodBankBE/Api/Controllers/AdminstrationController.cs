@@ -1,21 +1,24 @@
-﻿using Api.Dto;
+﻿using Api.Const;
 using Api.Dto.Idintity;
+using Api.Dto.User;
 using Api.Helpers;
 using Api.Interfaces;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
 {
+    [Authorize(Roles = "Admin")]
     [Route("api/[controller]")]
     [ApiController]
+
     public class AdminstrationController : ControllerBase
     {
         private readonly IMapper _mapper;
         private readonly IUnitOfWork _uow;
         private readonly IAuthService _authService;
-
         public AdminstrationController(IAuthService authService, IUnitOfWork uow, IMapper mapper)
         {
             _uow = uow;

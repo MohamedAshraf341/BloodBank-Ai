@@ -44,7 +44,7 @@
       "Country": "Egypt"
     },
     "LastUpdated": "2020-06-11",
-    "Moderators": [ { "User": { "UserName": "Admin" } } ],
+    "Moderators": [ { "User": { "UserName": "bankadmin" } } ],
     "Website": "https://www.nimhans.com",
     "Photo": { "Url": "https://image.freepik.com/free-vector/donate-blood-isolated-logo_1025-350.jpg" }
   },
@@ -93,7 +93,7 @@
       "Country": "Egypt"
     },
     "LastUpdated": "2020-07-26",
-    "Moderators": [ { "User": { "UserName": "Mohamed" } } ],
+    "Moderators": [ { "User": { "UserName": "bankadmin" } } ],
     "Website": "https://www.victoria.com",
     "Photo": { "Url": "https://image.freepik.com/free-vector/heart-care-logo_1032-146.jpg" }
   },
@@ -191,7 +191,7 @@
       "Country": "Egypt"
     },
     "LastUpdated": "2020-02-05",
-    "Moderators": [ { "User": { "UserName": "Ali" } } ],
+    "Moderators": [ { "User": { "UserName": "yara" } } ],
     "Website": "https://www.fortis.com",
     "Photo": { "Url": "https://image.freepik.com/free-vector/give-blood-background_1057-1029.jpg" }
   },

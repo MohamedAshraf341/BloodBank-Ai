@@ -8,12 +8,6 @@
                 </div>
                 <input type="text" [(ngModel)]="searchText" placeholder="Search by donors ..."
                     class="form-control border border-danger">
-                <!-- <div class="input-group-append">
-                    <a (click)="toggle('grid')" class="input-group-text border-top-0 border-right-0 border-bottom-0"><i
-                            class="fa fa-th"></i></a>
-                    <a (click)="toggle('list')" class="input-group-text border-top-0 border-right-0 border-bottom-0"><i
-                            class="fa fa-list"></i></a>
-                </div> -->
             </div>
         </div>
     </div>
@@ -39,102 +33,6 @@
     </div>
 </div>
 
-<!-- <div *ngIf="type=='grid'" class="container pt-3 " >
-    <div class="row">
-        <div *ngFor="let donor of donors | search: searchText | paginate: { itemsPerPage: 6, currentPage: p }; let i = index;"
-            class="col-xl-4 col-lg-6 mb-4">
-            <div class="flip">
-                <div class="content ">
-                    <div class="front ">
-                        <div class="card border-0 box-shadow rounded-0 " style="cursor:pointer;"
-                            (click)="getdonor(donor.id,modal)">
-                            <div class="card-header border-0 rounded-0 text-muted">
-                                <h5 class="mb-0">
-                                    {{donor.name}}
-                                </h5>
-                            </div>
-                            <div class="card-body pt-3">
-
-                                <div class="media">
-                                    <div class="d-flex flex-column justify-content-center">
-                                        <img *ngIf="donor.picture" class="rounded-circle"
-                                            [src]="getPictureUrl(donor.picture)" width="80">
-                                        <img *ngIf="!donor.picture" class="rounded-circle"
-                                            src="../../../assets/siteimg/default-user.jpg" width="80">
-                                        <ul class="list-inline mb-0 mt-1 mx-auto fs-12 text-gray">
-                                            <li class="list-inline-item mr-0">
-                                                <span class="fa-stack">
-                                                    <i class="fa fa-square-o fa-stack-2x"></i>
-                                                    <i class="fa fa-facebook fa-stack-1x"></i>
-                                                </span>
-                                            </li>
-                                            <li class="list-inline-item mr-0">
-                                                <span class="fa-stack">
-                                                    <i class="fa fa-square-o fa-stack-2x"></i>
-                                                    <i class="fa fa-twitter fa-stack-1x"></i>
-                                                </span>
-                                            </li>
-                                            <li class="list-inline-item mr-0">
-                                                <span class="fa-stack">
-                                                    <i class="fa fa-square-o fa-stack-2x"></i>
-                                                    <i class="fa fa-google fa-stack-1x"></i>
-                                                </span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="media-body ml-3">
-                                        <div class="row">
-                                            <div class="col-4 text-gray text-right pr-0 font-italic text-truncate">
-                                                group:</div>
-                                            <div class="col-8 pl-2 text-truncate">{{donor.bloodGroup}}</div>
-                                            <div class="col-4 text-gray text-right pr-0 font-italic text-truncate">age:
-                                            </div>
-                                            <div class="col-8 pl-2 text-truncate">{{donor.age}}</div>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div *ngIf="type=='list'" class="container pt-3 " >
-    <div class="row">
-        <div class="col-12">
-            <div class="table-responsive bg-white box-shadow">
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Full Name</th>
-                            <th>group</th>
-                            <th>age</th>
-                        </tr>
-                    </thead>
-                    <tbody
-                        *ngFor="let donor of donors | search : searchText | paginate: { itemsPerPage: 6, currentPage: p }">
-                        <tr style="cursor:pointer;" (click)="getdonor(donor.id,modal)">
-                            <td class="align-middle">
-                                <img *ngIf="donor.picture" class="rounded-circle" [src]="getPictureUrl(donor.picture)"
-                                    width="40">
-                                <img *ngIf="!donor.picture" class="rounded-circle"
-                                    src="../../../assets/siteimg/default-user.jpg" width="40">
-                            </td>
-                            <td class="align-middle text-truncate">{{donor.name}} </td>
-                            <td class="align-middle text-truncate">{{donor.bloodGroup}}</td>
-                            <td class="align-middle text-truncate">{{donor.age}}</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-</div> -->
 <div class="container pb-4" >
     <div class="row justify-content-center" >
             <div class="bg-white text-center" style="width: fit-content;">

@@ -1,7 +1,10 @@
 ﻿using Api.Data.Entities;
 using Api.Data.Entities.Identity;
-using Api.Dto;
+using Api.Dto.Address;
+using Api.Dto.Bank;
+using Api.Dto.BloodGroupe;
 using Api.Dto.Idintity;
+using Api.Dto.User;
 using AutoMapper;
 
 namespace Api.Mapping
@@ -10,6 +13,9 @@ namespace Api.Mapping
     {
         public AutoMapperProfile()
         {
+
+
+
             CreateMap<ApplicationUser, UserDetailDto>()
                 .IncludeMembers(s => s.Address)
                 .ForMember(dest => dest.Age, opt => opt.MapFrom(src => CalculateAge(src.DateOfBirth)));

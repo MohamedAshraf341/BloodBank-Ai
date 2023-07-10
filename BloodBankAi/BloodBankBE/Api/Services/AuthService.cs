@@ -1,8 +1,8 @@
 ﻿using Api.Const;
 using Api.Data.Entities;
 using Api.Data.Entities.Identity;
-using Api.Dto;
 using Api.Dto.Idintity;
+using Api.Dto.User;
 using Api.Helpers;
 using Api.Interfaces;
 using Microsoft.AspNetCore.Identity;
@@ -34,10 +34,8 @@ namespace Api.Services
         {
             if (await _userManager.FindByEmailAsync(model.Email) is not null)
                 return new ResponseAuthDto { Message = "Email is already registered!" };
-
             if (await _userManager.FindByNameAsync(model.Username) is not null)
                 return new ResponseAuthDto { Message = "Username is already registered!" };
-
             var user = new ApplicationUser
             {
                 Name=model.Name,
@@ -51,7 +49,6 @@ namespace Api.Services
                 Available=true,
                 Address=new Address {Area=model.Area,City=model.City,Government=model.Government }
             };
-
             var result = await _userManager.CreateAsync(user, model.Password);
 
             if (!result.Succeeded)
@@ -63,15 +60,11 @@ namespace Api.Services
 
                 return new ResponseAuthDto { Message = errors };
             }
-
             await _userManager.AddToRoleAsync(user, Roles.Member.ToString());
-
             var jwtSecurityToken = await CreateJwtToken(user);
-
             var refreshToken = GenerateRefreshToken();
             user.RefreshTokens?.Add(refreshToken);
             await _userManager.UpdateAsync(user);
-
             return new ResponseAuthDto
             {
                 Message = "Rgester is successfuly",
@@ -84,7 +77,9 @@ namespace Api.Services
                 Roles = new List<string> { Roles.Member.ToString() },
                 Token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken),
                 RefreshToken = refreshToken.Token,
-                RefreshTokenExpiration = refreshToken.ExpiresOn
+                RefreshTokenExpiration = refreshToken.ExpiresOn,
+                Picture=user.Picture,
+               
             };
         }
 
@@ -112,7 +107,7 @@ namespace Api.Services
             authModel.Username = user.UserName;
             authModel.ExpiresOn = jwtSecurityToken.ValidTo;
             authModel.Roles = rolesList.ToList();
-
+            authModel.Picture = user.Picture;
             if (user.RefreshTokens.Any(t => t.IsActive))
             {
                 var activeRefreshToken = user.RefreshTokens.FirstOrDefault(t => t.IsActive);

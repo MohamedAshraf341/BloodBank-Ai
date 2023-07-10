@@ -6,11 +6,14 @@ using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
 using System.Text.Json;
 using Api.Interfaces;
-using Api.Dto;
 using Api.Helpers;
+using Microsoft.AspNetCore.Authorization;
+using Api.Dto.Bank;
 
 namespace Api.Controllers
 {
+    //[Authorize]
+
     [Route("api/[controller]")]
     [ApiController]
     public class BankController : ControllerBase
@@ -22,6 +25,7 @@ namespace Api.Controllers
             _uow = uow;
             _mapper = mapper;
         }
+
         [HttpGet("getallbanks")]
         public async Task<ApiResponse<List<BankWithBloodGroupsDto>>> GetAllBank()
         {

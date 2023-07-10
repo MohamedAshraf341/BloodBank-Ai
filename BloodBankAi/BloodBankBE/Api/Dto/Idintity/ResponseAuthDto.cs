@@ -12,6 +12,7 @@ namespace Api.Dto.Idintity
         public string? Email { get; set; }
         public List<string>? Roles { get; set; }
         public string? Token { get; set; }
+        public byte[]? Picture { get; set; }
         public DateTime? ExpiresOn { get; set; }
 
         [JsonIgnore]

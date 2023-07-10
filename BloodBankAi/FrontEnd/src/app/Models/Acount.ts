@@ -10,11 +10,12 @@ export interface loginModel {
     username: string
     email: string
     roles: string[]
+    picture: string
     token: string
     expiresOn: string
     refreshTokenExpiration: string
   }
-  export interface register {
+  export interface registerModel {
     name: string
     username: string
     email: string
@@ -27,3 +28,6 @@ export interface loginModel {
     government: string
     password: string
   }
+  export interface RevokeTokenDto {
+    token ?: string;
+}

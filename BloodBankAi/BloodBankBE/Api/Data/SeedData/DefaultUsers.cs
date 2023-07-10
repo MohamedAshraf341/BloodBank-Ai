@@ -1,7 +1,7 @@
 ﻿using Api.Const;
 using Api.Data.Entities;
 using Api.Data.Entities.Identity;
-using Api.Dto;
+using Api.Dto.User;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Globalization;
@@ -53,7 +53,7 @@ namespace Api.Data.SeedData
                         await userManager.CreateAsync(user, passwordAdmin);
                         await userManager.AddToRolesAsync(user, new[] { Roles.Member.ToString(), Roles.Admin.ToString() });
                     }
-                    else if (user.UserName == "salma")
+                    else if (user.UserName == "moderator")
                     {
                         var passwordModerator = "Moderator@2023";
                         await userManager.CreateAsync(user, passwordModerator);
@@ -61,7 +61,7 @@ namespace Api.Data.SeedData
                     }
                     else
                     {
-                        var passwordMember = "Member@2023";
+                        var passwordMember = "User@2023";
                         await userManager.CreateAsync(user, passwordMember);
                         await userManager.AddToRoleAsync(user,Roles.Member.ToString() );
                     }

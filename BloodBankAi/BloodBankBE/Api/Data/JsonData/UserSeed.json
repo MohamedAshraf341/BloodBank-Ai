@@ -19,7 +19,7 @@
   },
   {
     "Name": "MohamedRamy",
-    "UserName": "Mohamed",
+    "UserName": "bankmoderator",
     "Gender": "Male",
     "DateOfBirth": "1982-03-30",
     "BloodGroup": "AB+",
@@ -55,7 +55,7 @@
   },
   {
     "Name": "AliMohamed",
-    "UserName": "Ali",
+    "UserName": "bankadmin",
     "Gender": "Male",
     "DateOfBirth": "1980-09-28",
     "BloodGroup": "B+",
@@ -955,7 +955,7 @@
   },
   {
     "Name": "SalmaAli",
-    "UserName": "Salma",
+    "UserName": "moderator",
     "Gender": "Female",
     "DateOfBirth": "2000-09-19",
     "BloodGroup": "A-",
@@ -973,7 +973,7 @@
   },
   {
     "Name": "YaraMohamed",
-    "UserName": "Yara",
+    "UserName": "yara",
     "Gender": "Female",
     "DateOfBirth": "2000-09-29",
     "BloodGroup": "O+",
@@ -991,7 +991,7 @@
   },
   {
     "Name": "LayanMohamed",
-    "UserName": "Layan",
+    "UserName": "user",
     "Gender": "Female",
     "DateOfBirth": "1993-07-12",
     "BloodGroup": "A-",

@@ -8,6 +8,8 @@ using Api.Data.Entities.Identity;
 using Api.Data.Entities;
 using Api.Dto;
 using Api.Helpers;
+using Microsoft.AspNetCore.Authorization;
+using Api.Dto.User;
 
 namespace Api.Controllers
 {
@@ -86,7 +88,7 @@ namespace Api.Controllers
 
             return Ok(model);
         }
-
+        [Authorize]
         [HttpGet("refreshToken")]
         public async Task<ApiResponse<ResponseAuthDto>> RefreshToken()
         {
@@ -109,7 +111,7 @@ namespace Api.Controllers
             }
             
         }
-
+        //[Authorize]
         [HttpPost("revokeToken")]
         public async Task<ApiResponse<string>> RevokeToken([FromBody] RevokeTokenDto model)
         {
@@ -145,7 +147,7 @@ namespace Api.Controllers
 
             Response.Cookies.Append("refreshToken", refreshToken, cookieOptions);
         }
-
+        [Authorize]
         [HttpGet("getProfilebyid/{UserId}")]
         public async Task<ActionResult> GetUserProfile(string UserId)
         {
@@ -157,6 +159,7 @@ namespace Api.Controllers
                 return BadRequest("Not Found");
             return Ok(userDto);
         }
+        [Authorize]
         [HttpPut("updateProfile/{UserId}")]
         public async Task<ActionResult> UpdateUserProfile(string UserId, [FromForm] UserUpdateDto dto)
         {
@@ -178,6 +181,7 @@ namespace Api.Controllers
             var change = _uow.Complete();
             return Ok(result);
         }
+        [Authorize]
         [HttpPut("updateProfileimage/{UserId}")]
         public async Task<ActionResult> UpdateUserProfileImage(string UserId, [FromForm] PictureUpdateDto dto)
         {

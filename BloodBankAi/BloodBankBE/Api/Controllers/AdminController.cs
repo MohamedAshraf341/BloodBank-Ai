@@ -10,9 +10,15 @@ using Api.Data.Entities;
 using Api.Const;
 using Api.Dto.Idintity;
 using Api.Helpers;
+using Microsoft.AspNetCore.Authorization;
+using System.Data;
+using Api.Dto.Bank;
+using Api.Dto.User;
 
 namespace Api.Controllers
 {
+    [Authorize(Roles = "Admin,Moderator")]
+
     [Route("api/[controller]")]
     [ApiController]
     public class AdminController : ControllerBase

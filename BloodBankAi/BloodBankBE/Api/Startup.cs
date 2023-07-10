@@ -11,6 +11,9 @@ using Microsoft.OpenApi.Models;
 using System.Text;
 using Api.Data.Entities.Identity;
 using Api.Helpers;
+using Microsoft.AspNetCore.Hosting.Server.Features;
+using Serilog;
+using Microsoft.AspNetCore.Authentication;
 
 namespace Api
 {
@@ -52,13 +55,16 @@ namespace Api
                         ValidateIssuerSigningKey = true,
                         ValidateIssuer = true,
                         ValidateAudience = true,
-                        ValidateLifetime = true,
+                        ValidateLifetime = false,
                         ValidIssuer = Configuration["JWT:Issuer"],
                         ValidAudience = Configuration["JWT:Audience"],
+                        //ValidIssuer = "https://localhost:5001",
+                        //ValidAudience = "https://localhost:5001",
                         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JWT:Key"])),
                         ClockSkew = TimeSpan.Zero //to exite when expire 
                     };
                 });
+
 
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IAuthService, AuthService>();
@@ -82,9 +88,38 @@ namespace Api
             services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             services.AddEndpointsApiExplorer();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Blood Bank Api", Version = "v1" });
+
+                // Add JWT Bearer Authentication
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer",
+                    BearerFormat = "JWT",
+                    In = ParameterLocation.Header,
+                    Description = "JWT Authorization header using the Bearer scheme. \r\n\r\n Enter 'Bearer' [space] and then your token in the text input below.\r\n\r\nExample: \"Bearer 12345abcdef\""
+                });
+
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement
+                            {
+                                {
+                                    new OpenApiSecurityScheme
+                                    {
+                                        Reference = new OpenApiReference
+                                        {
+                                            Type = ReferenceType.SecurityScheme,
+                                            Id = "Bearer"
+                                        },
+                                        Name = "Bearer",
+                                        In = ParameterLocation.Header
+                                    },
+                                    new List<string>()
+                                }
+                            });
             });
         }
 
@@ -95,10 +130,12 @@ namespace Api
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Blood Bank Api v1"));
+                app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Blood Bank Api v1");                    
+                });
             }
-            app.UseHttpsRedirection();
-            //app.UseCors(c => c.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
+            //app.UseHttpsRedirection();
             app.UseRouting();
             app.UseCors("AllowAll");
             app.UseAuthentication();
@@ -107,6 +144,7 @@ namespace Api
             {
                 endpoints.MapControllers();
             });
+
         }
     }
 

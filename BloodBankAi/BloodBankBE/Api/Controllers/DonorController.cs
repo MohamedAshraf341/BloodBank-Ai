@@ -1,13 +1,16 @@
-﻿using Api.Dto;
+﻿using Api.Dto.User;
 using Api.Helpers;
 using Api.Interfaces;
 using AutoMapper;
-
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
 
 namespace Api.Controllers
 {
+    [Authorize]
+
     [Route("api/[controller]")]
     [ApiController]
     public class DonorController : ControllerBase
@@ -22,6 +25,7 @@ namespace Api.Controllers
         [HttpGet("getalldonors")]
         public async Task<ApiResponse<IEnumerable<GetDonorsDto>>> GetAllUsers()
         {
+            
             try
             {
                 var users = await _uow.Users.GetAllAsync();

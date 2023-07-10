@@ -1,32 +1,59 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light" >
-    <a class="navbar-brand" routerLink="home">
-        <img id="logo" src="assets/siteimg/blood.jpg" class="d-inline-block align-top" alt="logo-give-blood">
-      </a>    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item mb-1">
-            <a routerLinkActive="active" class="btn btn-outline-danger px-3 rou mx-2" style="height: 40px;width: 110px;" routerLink="/SignUp" type="submit">SingUp <i class="fa fa-lock" aria-hidden="true"></i>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a routerLinkActive="active" class="btn btn-outline-danger px-3  mx-2" style="height: 40px;width: 110px;" routerLink="/Login" type="submit">LogIn <i class="fa fa-sign-in" aria-hidden="true"></i>
-            </a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-              aria-expanded="false">
-              <img src="../../../assets/siteimg/default-user.jpg" style="max-height: 5vmin;"
-                        class="rounded-circle" />
-                    userName
-          </a>
-          <div class="dropdown-menu">
-              <a class="dropdown-item" routerLink="/EditProfile" >EditProfile</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" >LogOut</a>
-          </div>
+  <a class="navbar-brand" routerLink="home">
+    <img id="logo" src="assets/siteimg/blood.jpg" class="d-inline-block align-top" alt="logo-give-blood">
+  </a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
       </li>
-      </ul>
-    </div>
-  </nav>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact Us</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          Process
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" routerLink="/donation-process">donation process</a>
+          <a class="dropdown-item" routerLink="/donation_process_des">donation process des</a>
+          <a class="dropdown-item" routerLink="/what-happen-donateblood">what happen donateblood</a>
+          <a class="dropdown-item" routerLink="/frist-time-donation">frist time donation</a>
+        </div>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item mb-1" *ngIf="!isAuthenticated">
+        <a routerLinkActive="active" class="btn btn-outline-danger px-3 rou mx-2" style="height: 40px;width: 110px;"
+          (click)="onRegister()" type="submit">SingUp <i class="fa fa-lock" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="nav-item" *ngIf="!isAuthenticated">
+        <a routerLinkActive="active" class="btn btn-outline-danger px-3  mx-2" style="height: 40px;width: 110px;"
+        (click)="onLogin()" type="submit">LogIn <i class="fa fa-sign-in" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="nav-item dropdown"  *ngIf="isAuthenticated">
+        <a  class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+          aria-expanded="false">
+          <img *ngIf="profilePicture" [src]="getPicture(profilePicture)" style="max-height: 5vmin;" class="rounded-circle" />
+          <img *ngIf="!profilePicture" src="../../../assets/siteimg/default-user.jpg" style="max-height: 5vmin;" class="rounded-circle" />
+          {{name||'username'}}
+        </a>
+
+        <div class="dropdown-menu">
+          <a class="dropdown-item" routerLink="/EditProfile">EditProfile</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" (click)="onLogout()">LogOut</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

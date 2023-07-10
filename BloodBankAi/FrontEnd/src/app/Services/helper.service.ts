@@ -3,6 +3,8 @@ import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { catchError } from 'rxjs/operators';
 import { Observable } from 'rxjs';
+import { requestAi,responsAi } from '../Models/AiModel';
+import { apiResponse } from '../Models/ApiResponse';
 
 @Injectable({
   providedIn: 'root'
@@ -10,6 +12,15 @@ import { Observable } from 'rxjs';
 export class HelperService {
 
   constructor(private http: HttpClient) { }
+  getBloodGroups(): Observable<any[]>
+  {
+    return this.http.get<any[]>(`${environment.api}/Helpers/getBloodGroups`).pipe(
+      catchError((error) => {
+        console.error(error);
+        throw error;
+      })
+    );
+  }
   getAllGov(): Observable<any[]>
   {
     return this.http.get<any[]>(`${environment.api}/Helpers/getallgovernorate`).pipe(
@@ -19,9 +30,18 @@ export class HelperService {
       })
     );
   }
-  getAllCit(): Observable<any[]>
+  getAllCit(id:number): Observable<any[]>
   {
-    return this.http.get<any[]>(`${environment.api}/Helpers/getallcities`).pipe(
+    return this.http.get<any[]>(`${environment.api}/Helpers/getallcitiesByGovernId/${id}`).pipe(
+      catchError((error) => {
+        console.error(error);
+        throw error;
+      })
+    );
+  }
+  getgovernorate(id:number): Observable<any>
+  {
+    return this.http.get<any>(`${environment.api}/Helpers/getgovernorate/${id}`).pipe(
       catchError((error) => {
         console.error(error);
         throw error;
@@ -48,6 +68,14 @@ export class HelperService {
   }
   getNews(): Observable<any> {
     return this.http.get<any>(`${environment.api}/Helpers/getNews`).pipe(
+      catchError((error) => {
+        console.error(error);
+        throw error;
+      })
+    );
+  }
+  getAiPrediction(body:requestAi): Observable<apiResponse<responsAi>> {
+    return this.http.post<apiResponse<responsAi>>(`${environment.api}/AiApi/test`,body).pipe(
       catchError((error) => {
         console.error(error);
         throw error;

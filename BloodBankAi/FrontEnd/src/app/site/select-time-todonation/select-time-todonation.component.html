@@ -1,87 +1,62 @@
 <div class="container my-5 pb-5">
-    <div class="jumbotron ">
+    <div class="jumbotron">
         <section>
-            <nav class="navbar navbar-light bg-light mb-2 " >
+            <nav class="navbar navbar-light bg-light mb-2">
                 <p>you should answer this question and select your time to donation</p>
             </nav>
             <section class="question">
                 <div class="container">
                     <div class="caption_qu">
-                        <h1 class="mb-3">1- Are you 17 – 65 years old?</h1>
-                       
-                            <div>
-                        <label>yes:</label>
-                        <input [(ngModel)]="answer" type="radio" name="q1" value="yes">
-                    </div>
-                    <div>
-                        <label>No:</label>
-                        <input [(ngModel)]="answer"  type="radio" name="q1" value="no">
-                    </div>
-                    
-                    </div>
-        
-                    <div class="caption_qu">
-                        <h1 class="mb-3">2- Do you currently weigh less than 50kg (7 stone 12 pounds)?</h1>
-                       
-                            <div>
-                        <label>yes:</label>
-                        <input  [(ngModel)]="answer1" id="demo" type="radio" name="q2" value="yes">
-                    </div>
-                    <div>
-                        <label>No:</label>
-                        <input  [(ngModel)]="answer1" id="demo" type="radio" name="q2" value="no">
-                    </div>
-                    
+                        <h1 class="mb-3">How many months has it been since you last donated?</h1>
+                        <div class="form-group row">
+                            <label for="last_donation_months" class="col-md-6 col-form-label">Months:</label>
+                            <div class="col-md-6">
+                                <input [(ngModel)]="model.recency__months_" type="number" required class="form-control" min="0" id="last_donation_months">
+                            </div>
+                        </div>
                     </div>
                     <div class="caption_qu">
-                        <h1 class="mb-3">Did you donate blood during the past three months?</h1>
-                       
-                            <div>
-                        <label>yes:</label>
-                        <input [(ngModel)]="answer2" type="radio" name="q3" value="yes">
-                    </div>
-                    <div>
-                        <label>No:</label>
-                        <input [(ngModel)]="answer2" type="radio" name="q3" value="no">
-                    </div>
-                    
+                        <h1 class="mb-3">What is the total number of donations?</h1>
+                        <div class="form-group row">
+                            <label for="total_donations" class="col-md-6 col-form-label">Total Donations:</label>
+                            <div class="col-md-6">
+                                <input [(ngModel)]="model.frequency__times_" type="number" required class="form-control" min="0" id="total_donations">
+                            </div>
+                        </div>
                     </div>
                     <div class="caption_qu">
-                        <h1 class="mb-3">
-                            Did you perform an operation for you soon?</h1>
-                       
-                            <div>
-                        <label>yes:</label>
-                        <input [(ngModel)]="answer3"type="radio" name="q4" value="yes">
+                        <h1 class="mb-3">How much total blood donated in c.c.?</h1>
+                        <div class="form-group row">
+                            <label for="total_blood_donated" class="col-md-6 col-form-label">Total Blood Donated:</label>
+                            <div class="col-md-6">
+                                <input [(ngModel)]="model.monetary__c_c__blood_" type="number" required class="form-control" min="0" id="total_blood_donated">
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <label>No:</label>
-                        <input [(ngModel)]="answer3"type="radio" name="q4" value="no">
+                    <div class="caption_qu">
+                        <h1 class="mb-3">How many months has passed since the first donation?</h1>
+                        <div class="form-group row">
+                            <label for="months_since_first_donation" class="col-md-6 col-form-label">Months Since First Donation:</label>
+                            <div class="col-md-6">
+                                <input [(ngModel)]="model.time__months_" type="number" required class="form-control" min="0" id="months_since_first_donation">
+                            </div>
+                        </div>
                     </div>
-                    
+                    <button class="btn btn-primary float-right" (click)="continue()" click>continue</button>
+                    <div [class.display]="display" class="mt-5 display">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img class="img-fluid" src="assets/siteimg/ia_600000027.png">
+                            </div>
+                            <div class="col-md-8 mt-5">
+                                <img class="img-fluid mr-5" src="assets/siteimg/ia_400000010.png">
+                                <!-- <input type="text" placeholder="Enter your username">
+                                <button class="btn btn-danger ml-5">Send to select time</button> -->
+                            </div>
+                        </div>
                     </div>
-                    <button  class="btn btn-primary float-right " (click)="continue()"click >continue</button>
-                   <div [class.display]="display"  class="mt-5 display ">
-                      <div class="row">
-                          <div class="col-md-4">
-                              <img class="img-fluid" src="assets/siteimg/ia_600000027.png">
-                      </div>
-                      <div class="col-md-8 mt-5">
-                        <img class="img-fluid mr-5" src="assets/siteimg/ia_400000010.png">
-                        <input  type="text" placeholder="enter your user name" >
-                              
-                          <button class="btn btn-danger ml-5 ">send to select time </button>
-                    
-                    </div>
-                        
-                        
-                   </div>
-                </div>
                 </div>
             </section>
-        
-          </section>
+        </section>
     </div>
 </div>
-
-

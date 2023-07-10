@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { requestAi,responsAi } from 'src/app/Models/AiModel';
+import { HelperService } from 'src/app/Services/helper.service';
 
 @Component({
   selector: 'app-select-time-todonation',
@@ -6,22 +8,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./select-time-todonation.component.scss']
 })
 export class SelectTimeTodonationComponent implements OnInit {
-  answer:string='';
-  answer1:string='';
-  answer2:string='';
-  answer3:string='';
+  model:requestAi={
+    recency__months_: 0,
+    frequency__times_: 0,
+    monetary__c_c__blood_: 0,
+    time__months_: 0,
+  }
+respns:responsAi;
   display: boolean;
-  constructor() { }
+  constructor(private helperService:HelperService) { }
   continue(){
-      
-    if(this.answer=="no"||this.answer1=="no"||this.answer2=="no"||this.answer3=="no"){
-      alert("sorry u cant can donate your blood beaucue your health")
-      this.display=true;
- 
-    }
-    else{
-     this.display=false;
-    }
+      this.helperService.getAiPrediction(this.model).subscribe((res)=>{
+        if(res.success )
+        {
+          this.display=true;       
+        }
+        else{
+          this.display=false;
+          alert("sorry u cant can donate your blood beaucue your health")
+        }
+      });
+    
     
    }
   ngOnInit(): void {

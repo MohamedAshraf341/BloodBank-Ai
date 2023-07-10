@@ -24,11 +24,7 @@ namespace Api.Data.Repository
             var items = _context.Set<T>();
             return items;
         }
-        //public IQueryable<T> values(int id)
-        //{
-        //    var items = _context.Set<T>().Find(id);
-        //    return items;
-        //}
+
         public async Task<IEnumerable<T>> GetAllWithChildren()
         {
             IQueryable<T> query = _context.Set<T>();

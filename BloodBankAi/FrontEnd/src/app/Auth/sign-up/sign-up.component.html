@@ -1,1 +1,104 @@
-<p>sign-up works!</p>
+<section>
+  <div class="container py-5">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-12 col-md-8 col-lg-10 col-xl-8">
+        <div class="card shadow-2-strong" style="border-radius: 1rem;">
+          <div class="card-body p-5">
+
+            <h3 class="mb-5  text-center">Create account</h3>
+
+            <form #registerForm="ngForm" (ngSubmit)="onSubmit()" autocomplete="off">
+              <div class="row">
+                <div class="form-group col-lg-6">
+                  <input type="text" formControlName="name" name="name" required placeholder="name"
+                    class="form-control form-control-lg" />
+                </div>
+                <div class="form-group col-lg-6">
+                  <input type="text" formControlName="username"  name="username" required placeholder="Username"
+                    class="form-control form-control-lg" />
+                </div>
+                <div class="form-group col-lg-6">
+                  <input type="text" formControlName="password"  name="password" required placeholder="password"
+                    class="form-control form-control-lg" />
+                    <div *ngIf="submitted && registerForm.controls.password.errors" class="text-danger">
+                      Password is required.
+                    </div>
+                </div>
+                <div class="form-group col-lg-6">
+                  <input type="text" formControlName="confirmPassword"  name="confirmPassword" required
+                    placeholder="confirmPassword" class="form-control form-control-lg" />
+                    <div *ngIf="submitted && registerForm.controls.confirmPassword.errors" class="text-danger">
+                      Confirm Password is required.
+                    </div>
+                    <div *ngIf="submitted && registerForm.errors?.passwordMismatch" class="text-danger">
+                      Passwords do not match.
+                    </div>
+                </div>
+                <div class="form-group col-lg-6">
+                  <input type="text" formControlName="phoneNumber" name="phoneNumber" required
+                    placeholder="phoneNumber" class="form-control form-control-lg" />
+                </div>
+                <div class="form-group col-lg-6">
+                  <input type="text" formControlName="email" name="email" required placeholder="email"
+                    class="form-control form-control-lg" />
+                </div>
+                
+                <div class="form-group col-lg-6">
+                  <select formControlName="government" (change)="onSelectChange($event.target.value)" class="form-control form-select" id="government">
+                    <option value="" disabled selected hidden>Select Government</option>
+                    <option *ngFor="let item of gov"  [value]="item.id">{{item.englishName}}</option>
+                  </select>
+                </div>
+                <div class="form-group col-lg-6">
+                  <select formControlName="city" class="form-control form-select" id="city" >
+                    <option value="" selected hidden disabled>Select City</option>
+                    <option *ngFor="let item of cit" [value]="item.englishName">{{item.englishName}}</option>
+                  </select>
+                  <div *ngIf="submitted && registerForm.controls.city.errors" class="text-danger">
+                    City is required.
+                  </div>
+                </div>
+                <div class="form-group col-lg-6">
+                  <input formControlName="area" type="text"  name="area" required placeholder="area"
+                    class="form-control form-control-lg" />
+                </div>
+
+                <div class="form-group col-lg-6">
+                  <select formControlName="bloodGroup" class="form-control form-select" id="bloodGroup" >
+                    <option value="" selected hidden disabled>Select bloodGroup</option>
+                    <option *ngFor="let item of bloodGroups" [value]="item">{{item}}</option>
+                  </select>
+                </div>
+                <div class="form-group col-lg-6">
+                  <label class="control-label">Gender: </label>
+                  <label class="form-check-label ml-5">
+                    <input formControlName="gender" type="radio" class="form-check-input" value="Male" >
+                    Male
+                  </label>
+                  <label class="form-check-label ml-5">
+                    <input formControlName="gender" type="radio" class="form-check-input" value="Female">
+                    Female
+                  </label>
+                </div>
+                <div class="form-group col-lg-6">
+                  <dl-date-time-picker formControlName="dateOfBirth" startView="day" maxView="year" minView="minute" minuteStep="5"
+                    [(ngModel)]="selectedDate">
+                  </dl-date-time-picker>
+                </div>
+                <div class="col-lg-6">
+                  <button class="btn btn-primary btn-lg btn-block offset-lg-6" [disabled]="registerForm.invalid"
+                    type="submit">Register</button>
+                </div>
+              </div>
+            </form>
+            <hr class="my-4">
+            <h6 class="form-label text-center">Already have an account?</h6>
+            <div class="col-lg-6">
+              <button class="btn btn-info btn-lg btn-block offset-lg-6" routerLink="/Login" type="button">Login</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

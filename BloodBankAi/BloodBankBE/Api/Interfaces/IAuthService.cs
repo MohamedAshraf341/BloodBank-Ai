@@ -1,5 +1,5 @@
-﻿using Api.Dto;
-using Api.Dto.Idintity;
+﻿using Api.Dto.Idintity;
+using Api.Dto.User;
 
 namespace Api.Interfaces
 {

@@ -1,4 +1,7 @@
 ﻿using Api.Dto;
+using Api.Dto.Address;
+using Api.Dto.Bank;
+using Api.Dto.User;
 using Api.Interfaces;
 using AutoMapper;
 using Microsoft.AspNetCore.Http;
@@ -29,6 +32,15 @@ namespace Api.Controllers
             var dto = _mapper.Map<IEnumerable<CityDto>>(governorates);
             return Ok(dto);
         }
+        [HttpGet("getgovernorate/{id}")]
+        public async Task<IActionResult> getgovernorate(int id)
+        {
+            var governorates = await _uow.Governorates.GetByIdAsync(id);
+            if (governorates == null)
+                return NotFound("Not Found ");
+            var dto = _mapper.Map<CityDto>(governorates);
+            return Ok(dto);
+        }
         [HttpGet("getallcities")]
         public async Task<IActionResult> GetAllCity()
         {
@@ -38,10 +50,10 @@ namespace Api.Controllers
             var dto = _mapper.Map<IEnumerable<CityDto>>(cities);
             return Ok(dto);
         }
-        [HttpGet("getallcitiesByGovernId{GovernId}")]
-        public async Task<IActionResult> getallcitiesByGovernId(int GovernId)
+        [HttpGet("getallcitiesByGovernId/{id}")]
+        public async Task<IActionResult> getallcitiesByGovernId(int id)
         {
-            var cities = await _uow.Cities.FindAllAsync(x=>x.GovernorateId== GovernId);
+            var cities = await _uow.Cities.FindAllAsync(x=>x.GovernorateId==id);
             if (cities == null)
                 return NotFound("Not Found");
             var dto = _mapper.Map<IEnumerable<CityDto>>(cities);

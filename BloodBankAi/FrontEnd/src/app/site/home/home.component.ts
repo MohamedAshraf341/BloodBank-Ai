@@ -15,16 +15,14 @@ export class HomeComponent implements OnInit {
   constructor(private NewsService:HelperService ){        
   }
   ngOnInit(): void {
+    // debugger
     this.getNews();
-    console.log(this.UpcomingNews);
   }
   getNews()
   {
     this.NewsService.getNews().subscribe((res)=>
     {
       this.UpcomingNews=res.articles;
-      console.log(res);
-
     })
   }
 }

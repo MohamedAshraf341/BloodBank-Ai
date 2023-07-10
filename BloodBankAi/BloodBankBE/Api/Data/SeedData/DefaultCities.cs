@@ -1,5 +1,5 @@
 ﻿using Api.Data.Entities;
-using Api.Dto;
+using Api.Dto.Address;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
 
