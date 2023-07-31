@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { requestAi,responsAi } from 'src/app/Models/AiModel';
 import { HelperService } from 'src/app/Services/helper.service';
+import { NotificationService } from 'src/app/Services/notification.service';
 
 @Component({
   selector: 'app-select-time-todonation',
@@ -14,18 +15,28 @@ export class SelectTimeTodonationComponent implements OnInit {
     monetary__c_c__blood_: 0,
     time__months_: 0,
   }
+  p='';
 respns:responsAi;
-  display: boolean;
-  constructor(private helperService:HelperService) { }
+  display: boolean=false;
+  constructor(private helperService:HelperService,    private notification: NotificationService,
+    ) { }
   continue(){
+    this.display=true; 
+    // debugger
       this.helperService.getAiPrediction(this.model).subscribe((res)=>{
-        if(res.success )
+        // if(res.success )
+        // {
+        //   this.display=true;       
+        // }
+        if(res.data.predictedLabel>0)
         {
-          this.display=true;       
+          this.notification.showSuccess('u  can donate your blood ','predictdonation')
+          // this.p='u  can donate your blood ';
         }
         else{
-          this.display=false;
-          alert("sorry u cant can donate your blood beaucue your health")
+          this.notification.showError('sorry u cant can donate your blood beaucue your health ','predictdonation')
+
+          // this.p='sorry u cant can donate your blood beaucue your health';
         }
       });
     

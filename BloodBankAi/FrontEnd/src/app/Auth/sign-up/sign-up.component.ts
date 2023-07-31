@@ -1,8 +1,10 @@
 import { Component ,OnInit} from '@angular/core';
 import { Router } from '@angular/router';
-import { registerModel } from 'src/app/Models/Acount';
+import {  registerModel } from 'src/app/Models/Acount';
 import { HelperService } from 'src/app/Services/helper.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AcountService } from 'src/app/Services/acount.service';
+import { NotificationService } from 'src/app/Services/notification.service';
 
 @Component({
   selector: 'app-sign-up',
@@ -17,9 +19,23 @@ export class SignUpComponent implements OnInit{
   cit:any[]=[];
   bloodGroups:any[]=[];
   selectedDate:any;
-
+  modal: registerModel = {
+    name: '',
+    username: '',
+    email: '',
+    dateOfBirth: '',
+    gender: '',
+    bloodGroup: '',
+    phoneNumber: '',
+    area: '',
+    city: '',
+    government: '',
+    password: ''
+  };
   constructor(private helperService:HelperService
-    ,private formBuilder: FormBuilder){
+    ,private formBuilder: FormBuilder,private accountService: AcountService,
+    private router: Router,
+    private notification: NotificationService,){
 
   }
   ngOnInit(): void {
@@ -27,7 +43,6 @@ export class SignUpComponent implements OnInit{
       name: ['', Validators.required],
       username: ['', Validators.required],
       password: ['', Validators.required],
-      confirmPassword: ['', Validators.required],
       phoneNumber: ['', Validators.required],
       email: ['', Validators.required],
       government: ['', Validators.required],
@@ -36,8 +51,6 @@ export class SignUpComponent implements OnInit{
       bloodGroup: ['', Validators.required],
       gender: ['', Validators.required],
       dateOfBirth: ['', Validators.required]
-    }, {
-      validator: this.matchPassword
     });
     this.helperService.getAllGov().subscribe((res)=>{
       this.gov=res;
@@ -48,11 +61,7 @@ export class SignUpComponent implements OnInit{
     });
     
   }
-  matchPassword(group: FormGroup) {
-    const password = group.controls['password'].value;
-    const confirmPassword = group.controls['confirmPassword'].value;
-    return password === confirmPassword ? null : { passwordMismatch: true };
-  }
+
   onSelectChange(value: any) 
   { 
     this.helperService.getAllCit(value).subscribe((res)=>{
@@ -68,7 +77,23 @@ export class SignUpComponent implements OnInit{
       return;
     }
     // Display form values on console
-    console.log(this.registerForm.value);
+
+    this.accountService.register(this.registerForm.value).subscribe((res)=>{
+      if (res.success) {
+        const token = res.data.token;
+        const user = res.data;
+        this.accountService.setToken(token);
+        this.accountService.setUser(user);
+        this.router.navigate(['/'])
+          .then(() => {            
+            window.location.reload();
+            this.notification.showSuccess(res.message, "Register");
+          });
+      }
+      else {
+        this.notification.showError(res.message, "register")
+      }
+    });
   }
 
 }

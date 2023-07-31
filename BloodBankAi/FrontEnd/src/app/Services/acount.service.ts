@@ -28,7 +28,7 @@ export class AcountService {
       })
     );
   }
-  register(body:registerModel): Observable<apiResponse<responseAuth>> {
+  register(body:any): Observable<apiResponse<responseAuth>> {
     return this.http.post<apiResponse<responseAuth>>(`${environment.api}/Account/register`,body).pipe(
       catchError((error) => {
         console.error(error);

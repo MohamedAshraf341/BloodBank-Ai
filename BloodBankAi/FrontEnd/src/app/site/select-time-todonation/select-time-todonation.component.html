@@ -43,15 +43,14 @@
                         </div>
                     </div>
                     <button class="btn btn-primary float-right" (click)="continue()" click>continue</button>
-                    <div [class.display]="display" class="mt-5 display">
+                    <div *ngIf="display" class="mt-5 display">
                         <div class="row">
                             <div class="col-md-4">
                                 <img class="img-fluid" src="assets/siteimg/ia_600000027.png">
                             </div>
                             <div class="col-md-8 mt-5">
                                 <img class="img-fluid mr-5" src="assets/siteimg/ia_400000010.png">
-                                <!-- <input type="text" placeholder="Enter your username">
-                                <button class="btn btn-danger ml-5">Send to select time</button> -->
+                                <p class="message">{{p}}!</p>
                             </div>
                         </div>
                     </div>
